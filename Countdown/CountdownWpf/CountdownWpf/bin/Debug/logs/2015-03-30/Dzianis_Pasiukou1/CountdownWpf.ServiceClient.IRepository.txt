@@ -1,0 +1,64 @@
+Date: 2015-03-30 17:12:58.4412 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: MINSK\Dzianis_Pasiukou1 
+
+Date: 2015-03-30 17:13:58.5950 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed get data from wcf. 
+System.TimeoutException: This request operation sent to http://localhost/CountdownService/CountdownService.svc did not receive a reply within the configured timeout (00:00:59.9900001).  The time allotted to this operation may have been a portion of a longer timeout.  This may be because the service is still processing the operation or because the service was unable to send a reply message.  Please consider increasing the operation timeout (by casting the channel/proxy to IContextChannel and setting the OperationTimeout property) and ensure that the service is able to connect to the client.
+
+Server stack trace: 
+   at System.ServiceModel.Dispatcher.DuplexChannelBinder.SyncDuplexRequest.WaitForReply(TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.DuplexChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.GetData(String userName)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.GetData(String userName) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 82
+   at CountdownWpf.ServiceClient.ServiceRepository.GetData() in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 155
+Date: 2015-03-30 17:14:18.6244 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: MINSK\Dzianis_Pasiukou1 
+
+Date: 2015-03-30 17:14:27.1064 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: MINSK\Dzianis_Pasiukou1 
+
+Date: 2015-03-30 17:16:00.8190 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed with disconnect user MINSK\Dzianis_Pasiukou1 
+System.ServiceModel.ProtocolException: This channel can no longer be used to send messages as the output session was auto-closed due to a server-initiated shutdown. Either disable auto-close by setting the DispatchRuntime.AutomaticInputSessionShutdown to false, or consider modifying the shutdown protocol with the remote server.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.PrepareCall(ProxyOperationRuntime operation, Boolean oneway, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.OnDisconnectUser(String userName)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.OnDisconnectUser(String userName) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 106
+   at CountdownWpf.ServiceClient.ServiceRepository.ReleaseManagedResources() in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 244
+Date: 2015-03-30 17:16:06.7320 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: MINSK\Dzianis_Pasiukou1 
+
+Date: 2015-03-30 17:20:36.1631 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: MINSK\Dzianis_Pasiukou1 
+

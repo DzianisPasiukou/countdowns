@@ -1,0 +1,243 @@
+Date: 2015-04-09 16:05:25.2871 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:09:14.8059 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:09:18.1158 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:09:42.0965 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:09:45.6744 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:10:54.9404 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:10:58.0214 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:14:44.1042 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:18:18.2410 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: null 
+
+Date: 2015-04-09 16:18:25.9947 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: null 
+
+Date: 2015-04-09 16:19:23.2879 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: null 
+
+Date: 2015-04-09 16:19:31.8455 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: null 
+
+Date: 2015-04-09 16:23:37.2010 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:24:15.3150 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: null 
+
+Date: 2015-04-09 16:24:42.6889 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:24:42.7439 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:26:05.5545 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:32:31.0469 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: null 
+
+Date: 2015-04-09 16:36:03.6669 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:36:06.3759 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:37:10.7499 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: null 
+
+Date: 2015-04-09 16:38:34.1109 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: null 
+
+Date: 2015-04-09 16:41:36.0009 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: null 
+
+Date: 2015-04-09 16:42:54.1579 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: null 
+
+Date: 2015-04-09 16:43:41.4769 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: null 
+
+Date: 2015-04-09 16:44:31.6449 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: null 
+
+Date: 2015-04-09 16:45:50.5119 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: null 
+
+Date: 2015-04-09 16:47:27.4539 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: null 
+
+Date: 2015-04-09 16:53:51.6723 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: null 
+
+Date: 2015-04-09 16:54:05.6430 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: null 
+
+Date: 2015-04-09 16:54:21.3717 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: null 
+
+Date: 2015-04-09 16:59:11.2223 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: null 
+
+Date: 2015-04-09 17:11:11.5893 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: null 
+
+Date: 2015-04-09 17:11:49.4243 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: null 
+
+Date: 2015-04-09 17:27:39.1913 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: null 
+
+Date: 2015-04-09 17:30:55.5483 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: null 
+
+Date: 2015-04-09 17:31:02.2793 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: null 
+
+Date: 2015-04-09 18:04:55.1902 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 18:05:00.9542 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+

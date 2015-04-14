@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CountdownModelStoreContainer" CdmEntityContainer="CountdownEntities">
+    <EntitySetMapping Name="Durations">
+      <EntityTypeMapping TypeName="CountdownModel.Duration">
+        <MappingFragment StoreEntitySet="Durations">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Years" ColumnName="Years" />
+          <ScalarProperty Name="Months" ColumnName="Months" />
+          <ScalarProperty Name="Days" ColumnName="Days" />
+          <ScalarProperty Name="Hours" ColumnName="Hours" />
+          <ScalarProperty Name="Minutes" ColumnName="Minutes" />
+          <ScalarProperty Name="Seconds" ColumnName="Seconds" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Exercises">
+      <EntityTypeMapping TypeName="CountdownModel.Exercis">
+        <MappingFragment StoreEntitySet="Exercises">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ReminderId" ColumnName="ReminderId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Files">
+      <EntityTypeMapping TypeName="CountdownModel.File">
+        <MappingFragment StoreEntitySet="Files">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ExercisesId" ColumnName="ExercisesId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Resource" ColumnName="Resource" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Intervals">
+      <EntityTypeMapping TypeName="CountdownModel.Interval">
+        <MappingFragment StoreEntitySet="Intervals">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Start" ColumnName="Start" />
+          <ScalarProperty Name="End" ColumnName="End" />
+          <ScalarProperty Name="DurationsId" ColumnName="DurationsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reminders">
+      <EntityTypeMapping TypeName="CountdownModel.Reminder">
+        <MappingFragment StoreEntitySet="Reminders">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="IntervalId" ColumnName="IntervalId" />
+          <ScalarProperty Name="TypeOfReminderId" ColumnName="TypeOfReminderId" />
+          <ScalarProperty Name="Duration_Id" ColumnName="Duration_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Settings">
+      <EntityTypeMapping TypeName="CountdownModel.Setting">
+        <MappingFragment StoreEntitySet="Settings">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeOfReminders">
+      <EntityTypeMapping TypeName="CountdownModel.TypeOfReminder">
+        <MappingFragment StoreEntitySet="TypeOfReminders">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="ReminderSettings" TypeName="CountdownModel.ReminderSettings" StoreEntitySet="ReminderSettings">
+      <EndProperty Name="Reminders">
+        <ScalarProperty Name="Id" ColumnName="ReminderId" />
+      </EndProperty>
+      <EndProperty Name="Settings">
+        <ScalarProperty Name="Id" ColumnName="SettingsId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

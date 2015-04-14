@@ -1,0 +1,15 @@
+Date: 2015-04-02 15:17:04.8478 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-04-02 15:30:59.8534 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-04-02 15:31:31.8777 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+

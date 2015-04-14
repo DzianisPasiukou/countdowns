@@ -1,0 +1,973 @@
+Date: 2015-03-31 12:02:18.8859 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: MINSK\Dzianis_Pasiukou1 
+
+Date: 2015-03-31 12:02:22.7053 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed get data from wcf. 
+System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: An error occurred while executing the command definition. See the inner exception for details. (Fault Detail is equal to An ExceptionDetail, likely created by IncludeExceptionDetailInFaults=true, whose value is:
+System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ----> System.Data.SqlClient.SqlException: Invalid column name 'PositionLeft'.
+Invalid column name 'PositionTop'.
+Invalid column name 'PositionLeft'.
+Invalid column name 'PositionTop'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataRead...).
+Date: 2015-03-31 12:03:01.2801 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed with disconnect user MINSK\Dzianis_Pasiukou1 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.OnDisconnectUser(String userName)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.OnDisconnectUser(String userName) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 106
+   at CountdownWpf.ServiceClient.ServiceRepository.ReleaseManagedResources() in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 244
+Date: 2015-03-31 12:03:08.7979 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: MINSK\Dzianis_Pasiukou1 
+
+Date: 2015-03-31 13:00:37.7488 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:00:38.8358 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:00:39.8958 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:00:40.9458 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:00:42.0148 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:00:43.0898 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:00:44.1608 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:00:45.2458 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:00:46.3218 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:00:47.3898 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:00:48.4458 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:00:49.5078 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:00:50.5548 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:00:51.5978 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:00:52.6338 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:00:53.6828 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:00:54.7478 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:00:55.8068 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:00:56.8538 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:00:57.8968 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:00:58.9428 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:00:59.9988 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:01:01.0558 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:01:02.1288 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:01:03.2118 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:01:04.2818 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:01:05.3608 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:01:06.4458 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:01:07.5268 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:01:08.6158 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:01:09.6768 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:01:10.7378 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:01:11.8118 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:01:12.8598 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:01:13.9128 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:01:14.9648 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:01:16.0128 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:01:17.0448 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:01:18.1258 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:01:19.1938 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:01:20.2738 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:01:21.3638 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:01:22.4468 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:01:23.5418 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed to update data. 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.UpdateData(String userName, Int32 id, State state)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 90
+   at CountdownWpf.ServiceClient.ServiceRepository.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 178
+Date: 2015-03-31 13:01:23.8978 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed with disconnect user MINSK\Dzianis_Pasiukou1 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.OnDisconnectUser(String userName)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.OnDisconnectUser(String userName) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 106
+   at CountdownWpf.ServiceClient.ServiceRepository.ReleaseManagedResources() in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 244
+Date: 2015-03-31 15:05:24.3419 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: MINSK\Dzianis_Pasiukou1 
+
+Date: 2015-03-31 15:50:02.4884 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed with disconnect user MINSK\Dzianis_Pasiukou1 
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.OnDisconnectUser(String userName)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.OnDisconnectUser(String userName) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 106
+   at CountdownWpf.ServiceClient.ServiceRepository.ReleaseManagedResources() in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 244
+Date: 2015-03-31 15:50:18.5574 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: MINSK\Dzianis_Pasiukou1 
+

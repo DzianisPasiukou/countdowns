@@ -1,0 +1,31 @@
+Date: 2015-04-06 13:51:35.2490 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-04-06 13:52:21.0410 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-04-06 13:52:41.7130 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-04-06 13:58:27.1010 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-04-06 13:58:59.9180 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+

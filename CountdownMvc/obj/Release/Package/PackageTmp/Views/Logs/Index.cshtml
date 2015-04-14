@@ -1,0 +1,32 @@
+﻿@Scripts.Render("~/bundles/anim")
+
+<script src="~/Scripts/MyScripts/Directives/tree.js"></script>
+
+<div ng-app="logApp" ng-controller="loggerCtrl">
+	<div id="logMenu">
+		<input type="file" onchange="angular.element(this).scope().chooseFile(this)" />
+		<div class="animation1">
+			<input type="button" style="float: right; margin-right: -150px;" value="Collapse all" ng-click="collapse()" />
+			<br />
+			<br />
+			<span style="float: right; margin-right: -150px;color:black"> Filter:</span>
+			<br />
+			<br />
+			<input type="text" style="float: right; margin-right: -150px;" ng-model="filter" />
+		</div>
+	</div>
+	<div id="desc" style="float: right;margin-top:300px;">
+		<span>{{selected.description}}</span>
+	</div>
+	<img class="animation" src="~/Resources/applications_system.ico" style="cursor:pointer; position: fixed; right: 0px; margin-right: auto; width:50px; height:50px;" />
+	<label>File: {{logger.name}}</label>
+	<br />
+	<div class="nav navbar-nav navbar-left">
+		<abn-tree tree-data="treedata"
+				  on-select="selectNode(branch)">
+		</abn-tree>
+	</div>
+	
+</div>
+
+@Scripts.Render("~/bundles/logs")

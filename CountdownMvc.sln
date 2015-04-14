@@ -1,0 +1,90 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountdownMvc", "CountdownMvc\CountdownMvc.csproj", "{C861F467-3038-47F9-8C3A-DD20C9DAE1E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountdownDataBaseLayer", "CountdownDataBaseLayer\CountdownDataBaseLayer.csproj", "{EEAB2626-4A6C-408D-ABA2-9213E6F9E5A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountdownBusinessLogic", "CountdownBusinessLogic\CountdownBusinessLogic.csproj", "{13B1D826-A9EE-4F8A-A3E7-0156C8F31591}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transfer", "Transfer\Transfer.csproj", "{23CAC7CC-4209-4E95-9C6A-FAA3DECE163D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestsOfCountdown", "UnitTestsOfCountdown\UnitTestsOfCountdown.csproj", "{7AE0094F-DF3D-49CB-810F-1283DAFBF053}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D6A02BB3-D69C-4FEF-8D86-A329E70FAE9D}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingManager", "LoggingManager\LoggingManager.csproj", "{85E575C2-317E-4739-A6E5-D02083032A5D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4C6256D7-B71C-43BD-A37E-3B876A550408}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dpasukov967.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CountdownMvc\\CountdownMvc.csproj
+		SccProjectName1 = CountdownMvc
+		SccLocalPath1 = CountdownMvc
+		SccProjectUniqueName2 = CountdownDataBaseLayer\\CountdownDataBaseLayer.csproj
+		SccProjectName2 = CountdownDataBaseLayer
+		SccLocalPath2 = CountdownDataBaseLayer
+		SccProjectUniqueName3 = CountdownBusinessLogic\\CountdownBusinessLogic.csproj
+		SccProjectName3 = CountdownBusinessLogic
+		SccLocalPath3 = CountdownBusinessLogic
+		SccProjectUniqueName4 = Transfer\\Transfer.csproj
+		SccProjectName4 = Transfer
+		SccLocalPath4 = Transfer
+		SccProjectUniqueName5 = UnitTestsOfCountdown\\UnitTestsOfCountdown.csproj
+		SccProjectTopLevelParentUniqueName5 = CountdownMvc.sln
+		SccProjectName5 = UnitTestsOfCountdown
+		SccLocalPath5 = UnitTestsOfCountdown
+		SccProjectUniqueName6 = LoggingManager\\LoggingManager.csproj
+		SccProjectName6 = LoggingManager
+		SccLocalPath6 = LoggingManager
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C861F467-3038-47F9-8C3A-DD20C9DAE1E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C861F467-3038-47F9-8C3A-DD20C9DAE1E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C861F467-3038-47F9-8C3A-DD20C9DAE1E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C861F467-3038-47F9-8C3A-DD20C9DAE1E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEAB2626-4A6C-408D-ABA2-9213E6F9E5A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEAB2626-4A6C-408D-ABA2-9213E6F9E5A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEAB2626-4A6C-408D-ABA2-9213E6F9E5A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEAB2626-4A6C-408D-ABA2-9213E6F9E5A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13B1D826-A9EE-4F8A-A3E7-0156C8F31591}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13B1D826-A9EE-4F8A-A3E7-0156C8F31591}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13B1D826-A9EE-4F8A-A3E7-0156C8F31591}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13B1D826-A9EE-4F8A-A3E7-0156C8F31591}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23CAC7CC-4209-4E95-9C6A-FAA3DECE163D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23CAC7CC-4209-4E95-9C6A-FAA3DECE163D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23CAC7CC-4209-4E95-9C6A-FAA3DECE163D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23CAC7CC-4209-4E95-9C6A-FAA3DECE163D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AE0094F-DF3D-49CB-810F-1283DAFBF053}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AE0094F-DF3D-49CB-810F-1283DAFBF053}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AE0094F-DF3D-49CB-810F-1283DAFBF053}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AE0094F-DF3D-49CB-810F-1283DAFBF053}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85E575C2-317E-4739-A6E5-D02083032A5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85E575C2-317E-4739-A6E5-D02083032A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85E575C2-317E-4739-A6E5-D02083032A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85E575C2-317E-4739-A6E5-D02083032A5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7AE0094F-DF3D-49CB-810F-1283DAFBF053} = {4C6256D7-B71C-43BD-A37E-3B876A550408}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35
+	EndGlobalSection
+EndGlobal

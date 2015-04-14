@@ -1,0 +1,1238 @@
+Date: 2015-03-30 17:12:14.6945 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:13:01.9512 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:13:01.9512 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:13:08.7432 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:13:08.7432 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:14:08.8069 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:14:08.8069 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:14:11.8474 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:14:11.8474 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:14:34.5993 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:14:34.6003 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:14:37.8823 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:14:37.8823 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:14:50.1863 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:14:50.1863 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:14:54.4973 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:14:54.4973 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:14:59.2902 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:14:59.2902 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:15:04.1882 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:15:04.1882 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:16:11.6400 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:16:11.6400 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:17:54.9051 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:17:54.9051 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:18:03.1501 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:18:29.6420 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:18:29.6420 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:18:39.8590 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:18:41.8660 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:18:41.8670 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:18:49.8430 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:18:49.8430 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:19:00.8889 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:19:00.8889 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:19:31.9598 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:19:45.2138 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:20:13.3807 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:20:13.3807 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:20:19.3487 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:20:19.3487 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:21:31.6721 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:21:35.7221 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:23:39.2771 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:23:42.1001 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:23:44.0031 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:23:46.4701 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:23:48.4971 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:23:50.3791 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:23:52.2121 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:23:53.9531 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:24:01.8401 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:25:33.6340 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:25:39.7360 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:26:27.7245 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:26:36.3601 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:27:11.5695 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:27:21.5532 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:27:27.0077 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:27:36.0883 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:27:53.3419 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:28:23.4888 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:28:37.7628 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:28:42.5061 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:28:52.2987 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:28:55.3174 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:29:07.3092 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:29:10.8944 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:29:50.2770 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:29:53.3307 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:30:03.5643 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:32:55.0107 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:34:18.9887 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:35:21.2137 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:35:39.4917 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:35:46.1177 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:35:51.1847 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:35:53.6547 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:35:57.6107 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:35:59.2457 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:36:02.2977 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:36:04.5127 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:36:07.4377 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:36:09.4777 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:36:11.7917 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:36:22.4757 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:37:01.5407 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:37:10.5097 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:37:38.2747 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:38:14.0727 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:42:28.2603 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:43:08.5777 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:45:30.7249 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:45:37.9049 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:45:41.6473 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:45:47.7163 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:45:55.4908 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:45:55.5478 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:46:04.0608 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:46:07.8707 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:46:11.0617 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:46:15.1347 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:46:19.7337 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:46:36.6482 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:46:41.7366 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:47:06.4784 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:47:09.6159 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:47:09.6159 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:47:22.6033 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:52:39.0644 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:52:53.7303 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:53:20.1486 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:53:33.4494 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:53:45.5523 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:54:21.1830 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:54:30.2919 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:54:47.1127 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:55:10.0386 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:55:10.0386 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:55:10.0386 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:55:10.0386 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:55:10.0386 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:55:26.1986 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:55:28.8306 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:55:30.9206 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:55:33.6456 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:55:35.1256 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:55:37.6496 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:55:42.3646 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:55:50.9106 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:56:08.3986 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:56:13.1986 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:56:37.8666 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:56:43.4405 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:59:04.6521 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:59:20.6940 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 17:59:26.1159 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:00:05.6743 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:00:05.6743 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:00:05.6743 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:00:05.6743 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:00:14.0751 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:00:16.8350 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:01:19.9791 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:01:51.2702 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:03:27.4273 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:03:37.2950 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:04:28.8535 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:05:49.9922 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:06:02.0080 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:06:53.0158 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:07:06.2327 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:09:09.7518 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:09:12.3968 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:12:41.4340 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:13:05.7849 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:13:22.5849 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:13:29.0488 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:14:03.1497 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:17:47.3247 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:17:54.3457 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:17:59.7121 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:18:12.2350 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:18:21.8347 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:18:23.2768 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:18:24.7479 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:18:26.1820 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:21:49.8595 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:22:51.6811 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:22:56.8581 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:23:04.2701 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:23:22.7361 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:24:26.6451 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:24:32.6321 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:34:09.3577 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:34:18.9749 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:34:29.7628 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:36:14.9905 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:43:46.0842 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:44:35.7207 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:44:42.0137 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:44:50.2647 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:55:07.2181 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:55:14.2030 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:55:20.4160 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:55:32.3908 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:55:37.3267 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 18:55:56.6234 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 19:01:11.3920 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 19:02:11.8339 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 19:11:39.4390 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 19:11:45.7629 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 19:14:04.9350 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 19:14:14.6740 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 19:14:45.4699 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 19:14:49.9814 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 19:16:14.0328 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 19:18:05.1089 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 19:23:17.3423 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 19:24:52.0862 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 19:26:59.1296 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 19:28:38.1357 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 19:28:50.6761 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 19:28:54.4921 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 19:28:57.3231 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 19:28:59.9611 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 19:41:20.8043 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 19:44:33.8698 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 19:45:39.8184 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 20:14:42.2563 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 20:15:48.3953 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 20:20:52.7439 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 20:21:19.2655 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 20:21:31.2237 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 20:22:12.3208 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 20:22:47.6624 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 20:23:29.8226 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 20:24:17.0433 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 20:25:38.9345 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 20:25:40.6447 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 20:25:42.0338 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 20:25:43.5370 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 20:25:44.7891 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 20:25:45.9982 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 20:25:47.4674 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-30 20:55:19.8322 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+

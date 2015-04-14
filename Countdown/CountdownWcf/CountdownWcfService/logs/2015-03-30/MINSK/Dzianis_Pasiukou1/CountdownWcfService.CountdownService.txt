@@ -1,0 +1,45 @@
+Date: 2015-03-30 17:12:58.3112 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:14:18.6144 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:14:27.0144 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:16:06.6300 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 17:20:36.1511 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-30 20:22:21.1717 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+

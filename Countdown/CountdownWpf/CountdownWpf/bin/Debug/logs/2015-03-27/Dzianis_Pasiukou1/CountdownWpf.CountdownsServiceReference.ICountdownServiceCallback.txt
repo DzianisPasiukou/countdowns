@@ -1,0 +1,54 @@
+Date: 2015-03-27 16:12:23.2870 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Callback for notify about refresh reminder is complete. Reminder: {
+  "Id": 3,
+  "Name": "new",
+  "Description": "new",
+  "ProgressSettings": {
+    "Interval": 1,
+    "Duration": 1,
+    "Start": "2015-03-27T16:11:39.167",
+    "End": "2015-03-27T16:13:39.167",
+    "Id": 3
+  },
+  "CountdownsSettings": null,
+  "State": 1
+} 
+
+Date: 2015-03-27 16:12:27.1480 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Callback for notify about refresh reminder is complete. Reminder: {
+  "Id": 3,
+  "Name": "new",
+  "Description": "new",
+  "ProgressSettings": {
+    "Interval": 1,
+    "Duration": 1,
+    "Start": "2015-03-27T16:13:27.103",
+    "End": "2015-03-27T16:15:27.103",
+    "Id": 3
+  },
+  "CountdownsSettings": null,
+  "State": 4
+} 
+
+Date: 2015-03-27 16:12:31.1310 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Callback for notify about refresh reminder is complete. Reminder: {
+  "Id": 3,
+  "Name": "new",
+  "Description": "new",
+  "ProgressSettings": {
+    "Interval": 1,
+    "Duration": 1,
+    "Start": "2015-03-27T16:12:27.103",
+    "End": "2015-03-27T16:14:27.103",
+    "Id": 3
+  },
+  "CountdownsSettings": null,
+  "State": 5
+} 
+

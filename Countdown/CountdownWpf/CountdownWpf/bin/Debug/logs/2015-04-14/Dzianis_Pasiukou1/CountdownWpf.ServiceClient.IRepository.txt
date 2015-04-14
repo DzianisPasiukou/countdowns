@@ -1,0 +1,239 @@
+Date: 2015-04-14 11:12:04.9055 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed with connected user  
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.OnConnectUser(String userName, String password)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.OnConnectUser(String userName, String password) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 98
+   at CountdownWpf.ServiceClient.ServiceRepository.<>c__DisplayClass1.<Connect>b__0() in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 247
+Date: 2015-04-14 11:12:24.9505 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed with disconnect user  
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.OnDisconnectUser(String userName)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.OnDisconnectUser(String userName) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 106
+   at CountdownWpf.ServiceClient.ServiceRepository.Disconnect() in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 217
+Date: 2015-04-14 11:12:45.8465 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed with connected user  
+System.ServiceModel.Security.SecurityNegotiationException: The caller was not authenticated by the service. ---> System.ServiceModel.FaultException: The request for security token could not be satisfied because authentication failed.
+   at System.ServiceModel.Security.SecurityUtils.ThrowIfNegotiationFault(Message message, EndpointAddress target)
+   at System.ServiceModel.Security.IssuanceTokenProviderBase`1.ThrowIfFault(Message message, EndpointAddress target)
+   at System.ServiceModel.Security.SspiNegotiationTokenProvider.GetNextOutgoingMessageBody(Message incomingMessage, SspiNegotiationTokenProviderState sspiState)
+   --- End of inner exception stack trace ---
+
+Server stack trace: 
+   at System.ServiceModel.Security.IssuanceTokenProviderBase`1.DoNegotiation(TimeSpan timeout)
+   at System.ServiceModel.Security.SspiNegotiationTokenProvider.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Security.WrapperSecurityCommunicationObject.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Security.CommunicationObjectSecurityTokenProvider.Open(TimeSpan timeout)
+   at System.ServiceModel.Security.SecurityUtils.OpenCommunicationObject(ICommunicationObject obj, TimeSpan timeout)
+   at System.ServiceModel.Security.SecurityUtils.OpenTokenProviderIfRequired(SecurityTokenProvider tokenProvider, TimeSpan timeout)
+   at System.ServiceModel.Security.SymmetricSecurityProtocol.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Security.WrapperSecurityCommunicationObject.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Security.SecurityProtocol.Open(TimeSpan timeout)
+   at System.ServiceModel.Channels.SecurityChannelFactory`1.ClientSecurityChannel`1.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Security.SecuritySessionSecurityTokenProvider.DoOperation(SecuritySessionOperation operation, EndpointAddress target, Uri via, SecurityToken currentToken, TimeSpan timeout)
+   at System.ServiceModel.Security.SecuritySessionSecurityTokenProvider.GetTokenCore(TimeSpan timeout)
+   at System.IdentityModel.Selectors.SecurityTokenProvider.GetToken(TimeSpan timeout)
+   at System.ServiceModel.Security.SecuritySessionClientSettings`1.ClientSecuritySessionChannel.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Channels.ReliableChannelBinder`1.ChannelSynchronizer.SyncWaiter.TryGetChannel()
+   at System.ServiceModel.Channels.ReliableChannelBinder`1.ChannelSynchronizer.SyncWaiter.TryWait(TChannel& channel)
+   at System.ServiceModel.Channels.ReliableChannelBinder`1.ChannelSynchronizer.TryGetChannel(Boolean canGetChannel, Boolean canCauseFault, TimeSpan timeout, MaskingMode maskingMode, TChannel& channel)
+   at System.ServiceModel.Channels.ReliableChannelBinder`1.ChannelSynchronizer.TryGetChannelForOutput(TimeSpan timeout, MaskingMode maskingMode, TChannel& channel)
+   at System.ServiceModel.Channels.ReliableChannelBinder`1.Send(Message message, TimeSpan timeout, MaskingMode maskingMode)
+   at System.ServiceModel.Channels.SendReceiveReliableRequestor.OnRequest(Message request, TimeSpan timeout, Boolean last)
+   at System.ServiceModel.Channels.ReliableRequestor.Request(TimeSpan timeout)
+   at System.ServiceModel.Channels.ClientReliableSession.Open(TimeSpan timeout)
+   at System.ServiceModel.Channels.ClientReliableDuplexSessionChannel.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.CallOpenOnce.System.ServiceModel.Channels.ServiceChannel.ICallOnce.Call(ServiceChannel channel, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.CallOnceManager.CallOnce(TimeSpan timeout, CallOnceManager cascade)
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.OnConnectUser(String userName, String password)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.OnConnectUser(String userName, String password) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 98
+   at CountdownWpf.ServiceClient.ServiceRepository.<>c__DisplayClass1.<Connect>b__0() in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 247
+Date: 2015-04-14 11:15:19.8765 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed with disconnect user  
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.OnDisconnectUser(String userName)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.OnDisconnectUser(String userName) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 106
+   at CountdownWpf.ServiceClient.ServiceRepository.Disconnect() in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 217
+Date: 2015-04-14 11:16:41.9365 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed with connected user  
+System.ServiceModel.Security.SecurityNegotiationException: The caller was not authenticated by the service. ---> System.ServiceModel.FaultException: The request for security token could not be satisfied because authentication failed.
+   at System.ServiceModel.Security.SecurityUtils.ThrowIfNegotiationFault(Message message, EndpointAddress target)
+   at System.ServiceModel.Security.IssuanceTokenProviderBase`1.ThrowIfFault(Message message, EndpointAddress target)
+   at System.ServiceModel.Security.SspiNegotiationTokenProvider.GetNextOutgoingMessageBody(Message incomingMessage, SspiNegotiationTokenProviderState sspiState)
+   --- End of inner exception stack trace ---
+
+Server stack trace: 
+   at System.ServiceModel.Security.IssuanceTokenProviderBase`1.DoNegotiation(TimeSpan timeout)
+   at System.ServiceModel.Security.SspiNegotiationTokenProvider.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Security.WrapperSecurityCommunicationObject.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Security.CommunicationObjectSecurityTokenProvider.Open(TimeSpan timeout)
+   at System.ServiceModel.Security.SecurityUtils.OpenCommunicationObject(ICommunicationObject obj, TimeSpan timeout)
+   at System.ServiceModel.Security.SecurityUtils.OpenTokenProviderIfRequired(SecurityTokenProvider tokenProvider, TimeSpan timeout)
+   at System.ServiceModel.Security.SymmetricSecurityProtocol.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Security.WrapperSecurityCommunicationObject.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Security.SecurityProtocol.Open(TimeSpan timeout)
+   at System.ServiceModel.Channels.SecurityChannelFactory`1.ClientSecurityChannel`1.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Security.SecuritySessionSecurityTokenProvider.DoOperation(SecuritySessionOperation operation, EndpointAddress target, Uri via, SecurityToken currentToken, TimeSpan timeout)
+   at System.ServiceModel.Security.SecuritySessionSecurityTokenProvider.GetTokenCore(TimeSpan timeout)
+   at System.IdentityModel.Selectors.SecurityTokenProvider.GetToken(TimeSpan timeout)
+   at System.ServiceModel.Security.SecuritySessionClientSettings`1.ClientSecuritySessionChannel.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Channels.ReliableChannelBinder`1.ChannelSynchronizer.SyncWaiter.TryGetChannel()
+   at System.ServiceModel.Channels.ReliableChannelBinder`1.ChannelSynchronizer.SyncWaiter.TryWait(TChannel& channel)
+   at System.ServiceModel.Channels.ReliableChannelBinder`1.ChannelSynchronizer.TryGetChannel(Boolean canGetChannel, Boolean canCauseFault, TimeSpan timeout, MaskingMode maskingMode, TChannel& channel)
+   at System.ServiceModel.Channels.ReliableChannelBinder`1.ChannelSynchronizer.TryGetChannelForOutput(TimeSpan timeout, MaskingMode maskingMode, TChannel& channel)
+   at System.ServiceModel.Channels.ReliableChannelBinder`1.Send(Message message, TimeSpan timeout, MaskingMode maskingMode)
+   at System.ServiceModel.Channels.SendReceiveReliableRequestor.OnRequest(Message request, TimeSpan timeout, Boolean last)
+   at System.ServiceModel.Channels.ReliableRequestor.Request(TimeSpan timeout)
+   at System.ServiceModel.Channels.ClientReliableSession.Open(TimeSpan timeout)
+   at System.ServiceModel.Channels.ClientReliableDuplexSessionChannel.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.CallOpenOnce.System.ServiceModel.Channels.ServiceChannel.ICallOnce.Call(ServiceChannel channel, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.CallOnceManager.CallOnce(TimeSpan timeout, CallOnceManager cascade)
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.OnConnectUser(String userName, String password)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.OnConnectUser(String userName, String password) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 98
+   at CountdownWpf.ServiceClient.ServiceRepository.<>c__DisplayClass1.<Connect>b__0() in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 247
+Date: 2015-04-14 11:16:44.1625 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed with disconnect user  
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.OnDisconnectUser(String userName)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.OnDisconnectUser(String userName) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 106
+   at CountdownWpf.ServiceClient.ServiceRepository.Disconnect() in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 217
+Date: 2015-04-14 11:17:03.7465 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed with connected user  
+System.ServiceModel.Security.SecurityNegotiationException: The caller was not authenticated by the service. ---> System.ServiceModel.FaultException: The request for security token could not be satisfied because authentication failed.
+   at System.ServiceModel.Security.SecurityUtils.ThrowIfNegotiationFault(Message message, EndpointAddress target)
+   at System.ServiceModel.Security.SspiNegotiationTokenProvider.GetNextOutgoingMessageBody(Message incomingMessage, SspiNegotiationTokenProviderState sspiState)
+   --- End of inner exception stack trace ---
+
+Server stack trace: 
+   at System.ServiceModel.Security.IssuanceTokenProviderBase`1.DoNegotiation(TimeSpan timeout)
+   at System.ServiceModel.Security.SspiNegotiationTokenProvider.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Security.WrapperSecurityCommunicationObject.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Security.CommunicationObjectSecurityTokenProvider.Open(TimeSpan timeout)
+   at System.ServiceModel.Security.SymmetricSecurityProtocol.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Security.WrapperSecurityCommunicationObject.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Channels.SecurityChannelFactory`1.ClientSecurityChannel`1.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Security.SecuritySessionSecurityTokenProvider.DoOperation(SecuritySessionOperation operation, EndpointAddress target, Uri via, SecurityToken currentToken, TimeSpan timeout)
+   at System.ServiceModel.Security.SecuritySessionSecurityTokenProvider.GetTokenCore(TimeSpan timeout)
+   at System.IdentityModel.Selectors.SecurityTokenProvider.GetToken(TimeSpan timeout)
+   at System.ServiceModel.Security.SecuritySessionClientSettings`1.ClientSecuritySessionChannel.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Channels.ReliableChannelBinder`1.ChannelSynchronizer.SyncWaiter.TryGetChannel()
+   at System.ServiceModel.Channels.ReliableChannelBinder`1.ChannelSynchronizer.SyncWaiter.TryWait(TChannel& channel)
+   at System.ServiceModel.Channels.ReliableChannelBinder`1.ChannelSynchronizer.TryGetChannel(Boolean canGetChannel, Boolean canCauseFault, TimeSpan timeout, MaskingMode maskingMode, TChannel& channel)
+   at System.ServiceModel.Channels.ReliableChannelBinder`1.Send(Message message, TimeSpan timeout, MaskingMode maskingMode)
+   at System.ServiceModel.Channels.SendReceiveReliableRequestor.OnRequest(Message request, TimeSpan timeout, Boolean last)
+   at System.ServiceModel.Channels.ReliableRequestor.Request(TimeSpan timeout)
+   at System.ServiceModel.Channels.ClientReliableSession.Open(TimeSpan timeout)
+   at System.ServiceModel.Channels.ClientReliableDuplexSessionChannel.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.CallOpenOnce.System.ServiceModel.Channels.ServiceChannel.ICallOnce.Call(ServiceChannel channel, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.CallOnceManager.CallOnce(TimeSpan timeout, CallOnceManager cascade)
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.OnConnectUser(String userName, String password)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.OnConnectUser(String userName, String password) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 98
+   at CountdownWpf.ServiceClient.ServiceRepository.<>c__DisplayClass1.<Connect>b__0() in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 247

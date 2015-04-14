@@ -1,0 +1,674 @@
+﻿@Scripts.Render("~/bundles/anim")
+
+<div ng-app="myApp" ng-controller="countdownController">
+	<div id="countdownsMain" style="background: url({{currentTheme}}); overflow-y: scroll;">
+		@*<img class="animation" src="~/Resources/applications_system.ico" style="cursor:pointer; position: fixed; right: 0px; margin-right: auto; width:50px; height:50px;" />*@
+		<div style="float: right;">
+			<input type="image" value="Add countdown" data-toggle="modal" data-target="#AddCountdown" tooltip-placement="bottom" data-backdrop="static" src="{{src.AddCountdown}}" style="width: 100px; height: 90px;" tooltip="Add countdown" />
+			<input type="image" value="Add progress" data-toggle="modal" style="width: 100px; height: 90px;" tooltip-placement="bottom" data-target="#AddProgress" data-backdrop="static" tooltip="Add progress" src="{{src.AddProgress}}" />
+			<br />
+			<span style="color:white">Filter:</span><input type="text" ng-model="filterReminder" />
+			<button ng-click="sort()">Sort</button>
+			<div class="btn-group" dropdown is-open="status.isopen">
+				<button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle>
+					Theme: <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu">
+					<li ng-repeat="theme in themes"><a href="#" ng-click="changeTheme(theme)">{{theme.name}}</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="main" class="container">
+			<div ng-repeat="countdown in countdowns | filter: {Reminder: {Name: filterReminder}}" @*popover-trigger="mouseenter" popover="..." my-text="countdown.Reminder.Description"*@ id="tile{{countdown.Reminder.Id}}" class="tile {{countdown.selected}}" ng-style="countdown.style.tile" ng-init="findSettings(countdown)" on-finish-render="dragg" position="positions">
+				<div>
+					<i class="pull-right glyphicon">
+						<input type="image" src="{{src.Settings}}" ng-click="info(countdown)" height="20" width="20" />
+						<input type="image" src="{{src.Deleted}}" height="20" width="20" ng-click="notify(countdown)" />
+					</i>
+				</div>
+				<br />
+				<div ng-model="countdown">
+					<p text-name="countdown.Reminder.Name" align="center" id="reminderName" ng-style="countdown.style.reminderName"></p>
+					<div id="progress" ng-if="countdown.Reminder.ProgressSettings">
+						<div ng-if="countdown.Stay" style="text-align:center">
+							<pre>{{countdown.Stay}}</pre>
+						</div>
+						<br />
+						<div class="progress-bar" ng-if="countdown.Progress < 100" id="progressInterval" ng-style="{'background': countdown.style.progressInterval.background, 'width': countdown.Progress + '%'}">
+							<b>{{countdown.Progress}}%</b>
+						</div>
+						<div class="progress-bar" ng-if="countdown.ProgressDuration < 100" id="progressDuration" ng-style="{'background': countdown.style.progressDuration.background, 'width': countdown.ProgressDuration + '%'}">
+							<b>{{countdown.ProgressDuration}}%</b>
+						</div>
+					</div>
+					<div id="countdowns" style="text-align:center" ng-if="countdown.Reminder.CountdownSettings">
+						<pre ng-style="countdown.style.countdownValue" id="countdownValue">{{countdown.Stay}}</pre>
+						<div ng-if="countdown.CountdownProgress > 0" class="progress-bar" ng-style="{'width':countdown.CountdownProgress*100 + '%'}">
+							<b>{{countdown.CountdownProgress*100}}%</b>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/ng-template" id="notify.html">
+			<div class="modal-header">
+				<h3 class="modal-title" my-text="countdown.Reminder.Name + '?'" style="text-align:center">Are you sure you want to delete </h3>
+			</div>
+			<div class="modal-body" style="text-align:center">
+				<div>
+					<input class="btn" type="button" value="Yes" ng-click="delete()" />
+					<input class="btn" type="button" value="No" ng-click="close()" />
+				</div>
+			</div>
+		</script>
+		<script type="text/ng-template" id="countdownModal.html">
+			<div class="modal-header">
+				<button type="button" class="close" ng-click="close()"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" text-name="countdown.Reminder.Name" text-length="50" style="text-align:center" id="myModalLabel"></h4>
+			</div>
+			<form name="infoCountdown">
+				<div class="modal-body">
+					Name: <input type="text" style="margin-left: 5.8%; width: 80%; max-width: none;" name="countdownName" ng-model="countdown.Reminder.Name" required />
+					<span style="color:red" ng-show="infoCountdown.countdownName.$dirty && infoCountdown.countdownName.$invalid">
+						<span ng-show="infoCountdown.countdownName.$error.required">Countdown name is required.</span>
+					</span>
+					<br />
+					Description: <input type="text" style="margin-top: 1%; width: 80%; max-width: none;" ng-model="countdown.Reminder.Description" />
+					<br />
+					<br />
+					<div id="progress" ng-if="countdown.Reminder.ProgressSettings">
+						<div class="progress-bar" ng-style="{'background': countdown.style.progressInterval.background, 'width': countdown.Progress + '%'}">
+							<b>{{countdown.Progress}}%</b>
+						</div>
+						<div class="progress-bar" ng-style="{'background': countdown.style.progressDuration.background, 'width': countdown.ProgressDuration + '%'}">
+							<b>{{countdown.ProgressDuration}}%</b>
+						</div>
+						<br />
+						<br />
+						<br />
+						<input type="button" class="btn-primary btn" ng-click="activateNow(countdown)" value="Activate now" ng-disabled="countdown.ActivateDisabled" />
+						<br />
+						<br />
+						<input type="button" id="postponeInput" class="btn-primary btn" ng-click="postPone(countdown, countdown.timeForPostpone)" ng-disabled="countdownTemp.postPoneDisabled" value="Postpone for" />
+						<input type="number" pattern="\d*" min="0" max="{{(countdown.Progress/100) *  countdown.Reminder.ProgressSettings.Interval}}" name="timeForPostpone" ng-model="countdown.timeForPostpone" ng-change="changePostponeTime(countdown.timeForPostpone, countdownTemp)"> minutes
+						<span style="color:red" ng-show="infoCountdown.timeForPostpone.$dirty && infoCountdown.timeForPostpone.$invalid">
+							<span ng-show="infoCountdown.timeForPostpone.$error.number">
+								Not valid number!
+							</span>
+							<span ng-show="infoCountdown.timeForPostpone.$error.min">
+								Not positive number!
+							</span>
+							<span ng-show="infoCountdown.timeForPostpone.$error.max">
+								Time for pospone must be less than {{(countdown.Progress/100) *  countdown.Reminder.ProgressSettings.Interval}} minutes!
+							</span>
+							<span ng-show="infoCountdown.timeForPostpone.$error.pattern">
+								Not integer number!
+							</span>
+						</span>
+					</div>
+					<div id="countdowns" style="text-align:center" ng-if="countdown.Reminder.CountdownSettings">
+						<pre ng-style="countdown.style.countdownValue" id="countdownValue">{{countdown.Stay}}</pre>
+						<br />
+						<div ng-if="countdown.CountdownProgress > 0" class="progress-bar" data-role="progressbar" ng-style="{'background': countdown.durationColor, 'width':countdown.CountdownProgress*100 + '%'}">
+							<b>{{countdown.CountdownProgress*100}}%</b>
+						</div>
+					</div>
+					<br />
+					<accordion close-others="oneAtATime">
+						<accordion-group ng-if="countdown.Reminder.ProgressSettings">
+							<accordion-heading>
+								Progress settings
+							</accordion-heading>
+							Start date:
+							<datepicker ng-model="countdown.tempData" class="well well-sm"></datepicker>
+							<br />
+							Start Time:
+							<timepicker ng-model="countdown.tempData" hour-step="1" minute-step="15" show-meridian="true"></timepicker>
+							<br />
+							Interval:
+							<input type="number" pattern="\d*" min="0" max="9999" name="interval" ng-model="countdown.Reminder.ProgressSettings.Interval" style="margin-left:1.3%;" required /> minutes
+							<span style="color:red" ng-show="infoCountdown.interval.$dirty && infoCountdown.interval.$invalid">
+								<span ng-show="infoCountdown.interval.$error.required">Interval is required.</span>
+								<span ng-show="infoCountdown.interval.$error.number">
+									Not valid number!
+								</span>
+								<span ng-show="infoCountdown.interval.$error.min">
+									Not positive number!
+								</span>
+								<span ng-show="infoCountdown.interval.$error.max">
+									Interval should contain a maximum of 4 digits!
+								</span>
+								<span ng-show="infoCountdown.interval.$error.pattern">
+									Not integer number!
+								</span>
+							</span>
+							<br />
+							Duration:
+							<input type="number" pattern="\d*" min="0" max="9999" name="duration" ng-model="countdown.Reminder.ProgressSettings.Duration" style="margin-top:1%;" required /> minutes
+							<span style="color:red" ng-show="infoCountdown.duration.$dirty && infoCountdown.duration.$invalid">
+								<span ng-show="infoCountdown.duration.$error.required">Duration is required.</span>
+								<span ng-show="infoCountdown.duration.$error.number">
+									Not valid number!
+								</span>
+								<span ng-show="infoCountdown.duration.$error.min">
+									Not positive number!
+								</span>
+								<span ng-show="infoCountdown.duration.$error.max">
+									Duration should contain a maximum of 4 digits!
+								</span>
+								<span ng-show="infoCountdown.duration.$error.pattern">
+									Not integer number!
+								</span>
+							</span>
+							<br />
+						</accordion-group>
+						<accordion-group heading="Countdown settings" ng-if="countdown.Reminder.CountdownSettings">
+							Start date:
+							<datepicker ng-model="countdown.tempData" class="well well-sm"></datepicker>
+							<br />
+							Start Time:
+							<timepicker ng-model="countdown.tempData" hour-step="1" minute-step="15" show-meridian="true"></timepicker>
+							<br />
+							<div style="position: relative; left: 35%; bottom: 85px">
+								Duration: <input type="number" min="0" max="9999" name="duration1" pattern="\d*" ng-model="countdown.Reminder.CountdownSettings.Duration" required /> minutes
+								<span style="color:red" ng-show="infoCountdown.duration1.$dirty && infoCountdown.duration1.$invalid">
+									<span ng-show="infoCountdown.duration1.$error.required">Duration is required.</span>
+									<span ng-show="infoCountdown.duration1.$error.number">
+										Not valid number!
+									</span>
+									<span ng-show="infoCountdown.duration1.$error.min">
+										Not positive number!
+									</span>
+									<span ng-show="infoCountdown.duration1.$error.max">
+										Duration should contain a maximum of 4 digits!
+									</span>
+									<span ng-show="infoCountdown.duration1.$error.pattern">
+										Not integer number!
+									</span>
+								</span>
+							</div>
+							Recurrence:
+							<div ng-controller="repeatController">
+								<table style="width:100%">
+									<tr>
+										<td>
+											<input type="checkbox" checklist-model="countdown.selectedDays" checklist-value="7" id="sunday{{countdown.Reminder.Id}}" />
+											<label for="sunday{{countdown.Reminder.Id}}">Sunday</label>
+										</td>
+										<td>
+											<input type="checkbox" checklist-model="countdown.selectedDays" checklist-value="0" id="daily{{countdown.Reminder.Id}}" />
+											<label for="daily{{countdown.Reminder.Id}}">Daily</label>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<input type="checkbox" checklist-model="countdown.selectedDays" checklist-value="1" id="monday{{countdown.Reminder.Id}}" />
+											<label for="monday{{countdown.Reminder.Id}}">Monday</label>
+										</td>
+										<td>
+											<input type="checkbox" checklist-model="countdown.selectedWeekly" checklist-value="0" id="weekly{{countdown.Reminder.Id}}" />
+											<label for="weekly{{countdown.Reminder.Id}}">Weekly</label>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<input type="checkbox" checklist-model="countdown.selectedDays" checklist-value="2" id="tuesday{{countdown.Reminder.Id}}" />
+											<label for="tuesday{{countdown.Reminder.Id}}">Tuesday</label>
+										</td>
+										<td>
+											<input type="checkbox" checklist-model="countdown.selectedMonthly" checklist-value="0" id="monthly{{countdown.Reminder.Id}}" />
+											<label for="monthly{{countdown.Reminder.Id}}">Monthly</label>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<input type="checkbox" checklist-model="countdown.selectedDays" checklist-value="3" id="wednesday{{countdown.Reminder.Id}}" />
+											<label for="wednesday{{countdown.Reminder.Id}}">Wednesday</label>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<input type="checkbox" checklist-model="countdown.selectedDays" checklist-value="4" id="thursday{{countdown.Reminder.Id}}" />
+											<label for="thursday{{countdown.Reminder.Id}}">Thursday</label>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<input type="checkbox" checklist-model="countdown.selectedDays" checklist-value="5" id="friday{{countdown.Reminder.Id}}" />
+											<label for="friday{{countdown.Reminder.Id}}">Friday</label>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<input type="checkbox" checklist-model="countdown.selectedDays" checklist-value="6" id="saturday{{countdown.Reminder.Id}}" />
+											<label for="saturday{{countdown.Reminder.Id}}">Saturday</label>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</accordion-group>
+						<div ng-controller="settingController">
+							<accordion-group heading="Settings">
+								<accordion-group ng-repeat="setting in countdown.Reminder.ReminderSettings">
+									<accordion-heading>
+										<span></span>{{setting.Name}}
+									</accordion-heading>
+									<ng-form name="settingForm" ng-init="initSetting(setting)">
+										<i class="pull-right glyphicon"><input type="image" tooltip="Delete setting" src="{{src.Deleted}}" ng-click="deleteSetting(setting, countdown)" height="20" width="20" /></i>
+										Name setting: {{setting.Name}}
+										<br />
+										<br />
+										Description of setting: {{setting.Description}}
+										<br />
+										<br />
+										Value <div ng-if="setting.isColor">
+											<input colorpicker type="text" name="settingValue" ng-change="changeSetting(setting, countdown)" ng-model="setting.Value" required />
+										</div>
+										<div ng-if="setting.isFont">
+											<input type="text" name="settingValue" ng-model="setting.Value" ng-change="changeSetting(setting, countdown)" typeahead="font for font in fonts | filter:$viewValue | limitTo:8" typeahead-on-select="selectType(countdown, setting,$item, $model, $label)" class="form-control" required>
+										</div>
+										<div id="valueSetting">
+										</div>
+										<span style="color:red" ng-show="settingForm.settingValue.$dirty && settingForm.settingValue.$invalid">
+											<span ng-show="settingForm.settingValue.$error.required">Setting value is required.</span>
+										</span>
+										<br />
+									</ng-form>
+								</accordion-group>
+								<accordion-group>
+									<accordion-heading>
+										<span></span>New setting
+									</accordion-heading>
+									Choosing setting: {{tempSetting.Setting.Name}}
+									<br />
+									<i class="pull-right glyphicon">
+										<div class="btn-group" dropdown is-open="status1.isopen">
+											<button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle>
+												Setting <span class="caret"></span>
+											</button>
+											<ul class="dropdown-menu" role="menu">
+												<li ng-repeat="setting in settings | filter:{ TypeOfReminderId: countdown.Reminder.TypeOfReminder.Id }">
+													<a href ng-click="chooseSetting(setting)">{{setting.Name}}</a>
+												</li>
+											</ul>
+										</div>
+									</i>
+									<div ng-if="tempSetting.isColor">
+										<input colorpicker type="text" name="tempSetting" ng-model="tempSetting.Value" required />
+									</div>
+									<div ng-if="tempSetting.isFont">
+										<input type="text" name="tempSetting" ng-model="tempSetting.Value" typeahead="font for font in fonts | filter:$viewValue | limitTo:8" typeahead-on-select="selectType(countdown, setting,$item, $model, $label)" class="form-control" required>
+									</div>
+									<div id="valueSetting">
+									</div>
+									<span style="color:red" ng-show="infoCountdown.tempSetting.$dirty && infoCountdown.tempSetting.$invalid">
+										<span ng-show="infoCountdown.tempSetting.$error.required">Setting value is required.</span>
+									</span>
+									<br />
+									<input type="button" class="btn btn-success" value="Add setting" ng-if="tempSetting.Value" ng-click="addSetting(tempSetting, countdown)" ng-disabled="infoCountdown.tempSetting.$invalid" />
+									<alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+								</accordion-group>
+							</accordion-group>
+						</div>
+						<div ng-controller="exerciseController">
+							<accordion-group heading="Documents">
+								<accordion-group ng-repeat="exercise in countdown.Reminder.Exercises">
+									<accordion-heading>
+										<p text-name="exercise.Name" text-length="50"></p>
+									</accordion-heading>
+									<div ng-form="exerciseForm">
+										<i class="pull-right glyphicon"><input type="image" src="{{src.Deleted}}" tooltip="Delete exercise" tooltip-placement="bottom" ng-click="deleteExercise(exercise, countdown)" height="20" width="20" /></i>
+										Name: <input type="text" style="margin-left: 6.5%; width: 80%; max-width: none;" name="exerciseName" ng-model="exercise.Name" required />
+										<span style="color:red" ng-show="exerciseForm.exerciseName.$dirty && exerciseForm.exerciseName.$invalid">
+											<span ng-show="exerciseForm.exerciseName.$error.required">Exercise name is required.</span>
+										</span>
+										<br />
+										Description: <input type="text" style="margin-top: 1%; width: 80%; max-width: none;" ng-model="exercise.Description" />
+										<br />
+									</div>
+									<div ng-controller="fileController">
+										<accordion-group ng-repeat="file in exercise.Files">
+											<accordion-heading>
+												<p text-name="file.Name" text-length="50"></p>
+											</accordion-heading>
+											<div ng-form="fileForm">
+												<i class="pull-right glyphicon"><input type="image" src="{{src.Deleted}}" tooltip="Delete file" tooltip-placement="bottom" ng-click="deleteFile(file, exercise)" height="20" width="20" /></i>
+												Name file:<input type="text" style="margin-left: 11%; width: 70%; max-width: none;" name="fileName" ng-model="file.Name" required />
+												<span style="color:red" ng-show="fileForm.fileName.$dirty && fileForm.fileName.$invalid">
+													<span ng-show="fileForm.fileName.$error.required">Name of file is required.</span>
+												</span>
+												<br />
+												Description of file: <input type="text" style="margin-top: 1%; width: 70%; max-width: none;" ng-model="file.Description" />
+												<br />
+												<br />
+												<div style="height: 305px" ng-if="file.Images.length > 0">
+													<carousel>
+														<slide ng-repeat="image in file.Images" active="image.active">
+															<img ng-src="{{image.Type + image.Data}}" style="margin: auto;">
+															<input type="image" tooltip="Delete image" tooltip-placement="bottom" src="{{src.Deleted}}" ng-click="deleteImage(image, file)" height="20" width="20" />
+														</slide>
+													</carousel>
+												</div>
+												<br />
+												<br />
+												<span class="btn btn-default btn-file">
+													Browse <input type="file" name="fileResource" accept="image/*" onchange="angular.element(this).scope().chooseImage(this.files, angular.element(this).scope().file, 2)" id="myFile">
+												</span>
+												<alert ng-repeat="alert in alerts | filter: opt = 2" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+											</div>
+										</accordion-group>
+										<accordion-group is-open="tempFile.opened">
+											<accordion-heading>
+												<p>New file</p>
+											</accordion-heading>
+											<div ng-form="tempFileForm">
+												Name file: <input type="text" style="margin-left: 11%; width: 70%; max-width: none;" name="tempFile" ng-model="tempFile.Name" required />
+												<span style="color:red" ng-show="tempFileForm.tempFile.$dirty && tempFileForm.tempFile.$invalid">
+													<span ng-show="tempFileForm.tempFile.$error.required">Name of file is required.</span>
+												</span>
+												<br />
+												Description of file: <input type="text" style="margin-top: 1%; margin-left: 0.9%; width: 70%; max-width: none;" ng-model="tempFile.Description" />
+												<br />
+												<br />
+												<div style="height: 305px" ng-if="tempFile.Images.length > 0">
+													<carousel>
+														<slide ng-repeat="image in tempFile.Images" active="image.active">
+															<img ng-src="{{image.Type + image.Data}}" style="margin: auto;">
+															<input type="image" tooltip="Delete image" tooltip-placement="bottom" src="{{src.Deleted}}" ng-click="deleteImage(image, tempFile)" height="20" width="20" />
+														</slide>
+													</carousel>
+												</div>
+												<br />
+												<br />
+												<span class="btn btn-default btn-file">
+													Browse <input type="file" name="fileResource" accept="image/*" onchange="angular.element(this).scope().chooseImage(this.files, angular.element(this).scope().tempFile, 1)" id="myFile">
+												</span>
+												<alert ng-repeat="alert in alerts | filter: opt = 1" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+												<br />
+												<br />
+												<br />
+												<input type="button" class="btn btn-success" value="Add file" ng-click="addFile(tempFile, exercise)" ng-disabled="tempFileForm.tempFile.$invalid" />
+											</div>
+										</accordion-group>
+									</div>
+								</accordion-group>
+								<accordion-group is-open="tempExercise.opened">
+									<accordion-heading>
+										<p>New document</p>
+									</accordion-heading>
+									<div ng-form="tempExerciseForm">
+										Name: <input type="text" style="margin-left: 6.3%; width: 80%; max-width: none;" name="tempExerciseName" ng-model="tempExercise.Name" required />
+										<span style="color:red" ng-show="tempExerciseForm.tempExerciseName.$dirty && tempExerciseForm.tempExerciseName.$invalid">
+											<span ng-show="tempExerciseForm.tempExerciseName.$error.required">Exercise name is required.</span>
+										</span>
+										<br />
+										Description: <input type="text" style="margin-top: 1%; width: 80%; max-width: none;" ng-model="tempExercise.Description" />
+										<br />
+										<div ng-controller="fileController">
+											<accordion-group ng-repeat="file in tempExercise.Files">
+												<accordion-heading>
+													<p text-name="file.Name" text-length="50"></p>
+												</accordion-heading>
+												<div ng-form="fileForm">
+													Name file: <input type="text" style="margin-left: 10%; width: 70%; max-width: none;" name="fileName" ng-model="file.Name" required />
+													<span style="color:red" ng-show="fileForm.fileName.$dirty && fileForm.fileName.$invalid">
+														<span ng-show="fileForm.fileName.$error.required">Name of file is required.</span>
+													</span>
+													<br />
+													Description of file: <input type="text" style="margin-top: 1%; width: 70%; max-width: none;" ng-model="file.Description" />
+													<br />
+													<div style="height: 305px" ng-if="file.Images.length > 0">
+														<carousel>
+															<slide ng-repeat="image in file.Images" active="image.active">
+																<img ng-src="{{image.Type + image.Data}}" style="margin: auto;">
+																<input type="image" tooltip="Delete image" tooltip-placement="bottom" src="{{src.Deleted}}" ng-click="deleteImage(image, file)" height="20" width="20" />
+															</slide>
+														</carousel>
+													</div>
+													<br />
+													<br />
+													<span class="btn btn-default btn-file">
+														Browse <input type="file" name="fileResource" accept="image/*" onchange="angular.element(this).scope().chooseImage(this.files, angular.element(this).scope().file, 2)" id="myFile">
+													</span>
+													<alert ng-repeat="alert in alerts | filter: opt = 2" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+												</div>
+											</accordion-group>
+											<accordion-group is-open="tempFile.opened">
+												<accordion-heading>
+													<p>New file</p>
+												</accordion-heading>
+												<div ng-form="tempFileForm">
+													Name file: <input type="text" style="margin-left: 10%; width: 70%; max-width: none;" name="tempFileName" ng-model="tempFile.Name" required />
+													<span style="color:red" ng-show="tempFileForm.tempFileName.$dirty && tempFileForm.tempFileName.$invalid">
+														<span ng-show="tempFileForm.tempFileName.$error.required">Name of file is required.</span>
+													</span>
+													<br />
+													Description of file: <input type="text" style="margin-top: 1%; width: 70%; max-width: none;" ng-model="tempFile.Description" />
+													<br />
+													<br />
+													<div style="height: 305px" ng-if="tempFile.Images.length > 0">
+														<carousel>
+															<slide ng-repeat="image in tempFile.Images" active="image.active">
+																<img ng-src="{{image.Type + image.Data}}" style="margin: auto;">
+																<input type="image" tooltip="Delete image" tooltip-placement="bottom" src="{{src.Deleted}}" ng-click="deleteImage(image, tempFile)" height="20" width="20" />
+															</slide>
+														</carousel>
+														<br />
+														<br />
+													</div>
+													<span class="btn btn-default btn-file">
+														Browse <input type="file" name="fileResource" accept="image/*" onchange="angular.element(this).scope().chooseImage(this.files, angular.element(this).scope().tempFile, 1)" id="myFile">
+													</span>
+													<alert ng-repeat="alert in alerts | filter: opt = 1" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+													<br />
+													<br />
+													<input type="button" class="btn btn-success" value="Add file" ng-click="addFile(tempFile, tempExercise, true)" ng-disabled="tempFileForm.tempFileName.$invalid" />
+												</div>
+											</accordion-group>
+										</div>
+										<input type="button" class="btn btn-success" value="Add document" ng-click="addExercise(tempExercise, countdown)" ng-disabled="tempExerciseForm.fileForm.$invalid
+													   ||tempExerciseForm.tempExerciseName.$invalid" />
+									</div>
+								</accordion-group>
+							</accordion-group>
+						</div>
+					</accordion>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal" ng-click="close()">Close</button>
+					<button type="button" class="btn btn-primary" ng-click="update(countdown)" data-dismiss="modal" ng-disabled="infoCountdown.countdownName.$invalid
+									|| infoCountdown.interval.$invalid
+									|| infoCountdown.duration.$invalid
+									|| infoCountdown.duration1.$invalid
+									|| infoCountdown.exerciseName.$invalid
+									|| settingForm.settingValue.$invalid
+									|| validate(countdown)">
+						Save changes
+					</button>
+				</div>
+			</form>
+		</script>
+	</div>
+	<div class="modal fade" id="AddCountdown" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content" style="height:100%;">
+				<form name="addCountdown" novalidate>
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Creating countdown</h4>
+					</div>
+					<div class="modal-body">
+						Name: <input type="text" style="margin-left:5.8%;width:80%;max-width:none" name="countdownName" ng-model="tempCountdown.Reminder.Name" required />
+						<span style="color:red" ng-show="addCountdown.countdownName.$dirty && addCountdown.countdownName.$invalid">
+							<span ng-show="addCountdown.countdownName.$error.required">Countdown name is required.</span>
+						</span>
+						<br />
+						Description: <input type="text" style="margin-top: 1%; margin-bottom: 3%; width: 80%; max-width: none;" ng-model="tempCountdown.Reminder.Description" />
+						<br />
+						<p>Start date:</p>
+						<datepicker ng-model="tempCountdown.Reminder.CountdownSettings.Start" class="well well-sm"></datepicker>
+						<p>Start Time:<timepicker ng-model="tempCountdown.Reminder.CountdownSettings.Start" style="width:30%; height:20%;" hour-step="1" minute-step="15" show-meridian="true"></timepicker></p>
+						<div style="position: relative; left: 35%; bottom: 65px;">
+							Duration: <input type="number" min="0" max="9999" name="duration1" ng-model="tempCountdown.Reminder.CountdownSettings.Duration" /> minutes
+							<span style="color:red" ng-show="addCountdown.duration1.$dirty && addCountdown.duration1.$invalid">
+								<span ng-show="addCountdown.duration1.$error.required">Duration is required.</span>
+								<span ng-show="addCountdown.duration1.$error.number">
+									Not valid number!
+								</span>
+								<span ng-show="addCountdown.duration1.$error.min">
+									Not positive number!
+								</span>
+								<span ng-show="addCountdown.duration1.$error.max">
+									Duration should contain a maximum of 4 digits!
+								</span>
+							</span>
+						</div>
+						Recurrence:
+						<div ng-controller="repeatController">
+							<table style="width:70%">
+								<tr>
+									<td>
+										<input type="checkbox" checklist-model="tempCountdown.selectedDays" checklist-value="7" id="tempSunday">
+										<label for="tempSunday">Sunday</label>
+									</td>
+									<td>
+										<input type="checkbox" checklist-model="tempCountdown.selectedDays" checklist-value="0" id="tempDaily">
+										<label for="tempDaily">Daily</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="checkbox" checklist-model="tempCountdown.selectedDays" checklist-value="1" id="tempMonday" />
+										<label for="tempMonday">Monday</label>
+									</td>
+									<td>
+										<input type="checkbox" checklist-model="tempCountdown.selectedWeekly" checklist-value="0" id="tempWeekly" />
+										<label for="tempWeekly">Weekly</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="checkbox" checklist-model="tempCountdown.selectedDays" checklist-value="2" id="tempTuesday" />
+										<label for="tempTuesday">Tuesday</label>
+									</td>
+									<td>
+										<input type="checkbox" checklist-model="tempCountdown.selectedMonthly" checklist-value="0" id="tempMonthly" />
+										<label for="tempMonthly">Monthly</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="checkbox" checklist-model="tempCountdown.selectedDays" checklist-value="3" id="tempWednesday" />
+										<label for="tempWednesday">Wednesday</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="checkbox" checklist-model="tempCountdown.selectedDays" checklist-value="4" id="tempThursday" />
+										<label for="tempThursday">Thursday</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="checkbox" checklist-model="tempCountdown.selectedDays" checklist-value="5" id="tempFriday" />
+										<label for="tempFriday">Friday</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="checkbox" checklist-model="tempCountdown.selectedDays" checklist-value="6" id="tempSaturday" />
+										<label for="tempSaturday">Saturday</label>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal" ng-click="closeAdding(tempCountdown)">Close</button>
+						<button type="button" class="btn btn-primary" ng-click="create(tempCountdown)" data-dismiss="modal" ng-disabled="addCountdown.$invalid">
+							Create
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="AddProgress" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form name="addProgress" novalidate>
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Creating progress</h4>
+					</div>
+					<div class="modal-body">
+						Name: <input type="text" style="margin-left: 5.8%; width: 80%; max-width: none;" name="progressName" ng-model="tempProgress.Reminder.Name" required />
+						<span style="color:red" ng-show="!addProgress.progressName.$pristine && addProgress.progressName.$invalid">
+							<span ng-show="addProgress.progressName.$error.required">Progress name is required.</span>
+						</span>
+						<br />
+						Description: <input type="text" style="margin-top: 1%; margin-bottom: 3%; width: 80%; max-width: none;" ng-model="tempProgress.Reminder.Description" />
+						<br />
+						Start date:
+						<datepicker ng-model="tempProgress.Reminder.ProgressSettings.Start" class="well well-lg"></datepicker>
+						Start Time:
+						<timepicker ng-model="tempProgress.Reminder.ProgressSettings.Start" hour-step="1" minute-step="15" show-meridian="true"></timepicker>
+						Interval:
+						<input type="number" min="0" name="interval" max="9999" ng-model="tempProgress.Reminder.ProgressSettings.Interval" style="margin-left:1.2%;" required /> minutes
+						<span style="color:red" ng-show="addProgress.interval.$dirty && addProgress.interval.$invalid">
+							<span ng-show="addProgress.interval.$error.required">Interval is required.</span>
+							<span ng-show="addProgress.interval.$error.number">
+								Not valid number!
+							</span>
+							<span ng-show="addProgress.interval.$error.min">
+								Not positive number!
+							</span>
+							<span ng-show="addProgress.interval.$error.max">
+								Interval should contain a maximum of 4 digits!
+							</span>
+						</span>
+						<br />
+						Duration:
+						<input type="number" min="0" name="duration" max="9999" ng-model="tempProgress.Reminder.ProgressSettings.Duration" style="margin-top:1%;" required /> minutes
+						<span style="color:red" ng-show="addProgress.duration.$dirty && addProgress.duration.$invalid">
+							<span ng-show="addProgress.duration.$error.required">Duration is required.</span>
+							<span ng-show="addProgress.duration.$error.number">
+								Not valid number!
+							</span>
+							<span ng-show="addProgress.duration.$error.min">
+								Not positive number!
+							</span>
+							<span ng-show="addProgress.duration.$error.max">
+								Duration should contain a maximum of 4 digits!
+							</span>
+						</span>
+						<br />
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal" ng-click="closeAdding(tempProgress)">Close</button>
+						<button type="button" class="btn btn-primary" ng-click="create(tempProgress)" data-dismiss="modal" ng-disabled="addProgress.$invalid">
+							Create
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="errorModal" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Error</h4>
+				</div>
+				<div class="modal-body" id="errorModalBody">
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

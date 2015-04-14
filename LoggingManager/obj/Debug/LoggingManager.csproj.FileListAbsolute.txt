@@ -1,0 +1,8 @@
+D:\Projects\CountdownMvc\LoggingManager\bin\Debug\LoggingManager.dll
+D:\Projects\CountdownMvc\LoggingManager\bin\Debug\LoggingManager.pdb
+D:\Projects\CountdownMvc\LoggingManager\bin\Debug\NLog.dll
+D:\Projects\CountdownMvc\LoggingManager\bin\Debug\NLog.xml
+D:\Projects\CountdownMvc\LoggingManager\obj\Debug\LoggingManager.dll
+D:\Projects\CountdownMvc\LoggingManager\obj\Debug\LoggingManager.pdb
+D:\Projects\CountdownMvc\LoggingManager\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\CountdownMvc\LoggingManager\bin\Debug\Newtonsoft.Json.xml

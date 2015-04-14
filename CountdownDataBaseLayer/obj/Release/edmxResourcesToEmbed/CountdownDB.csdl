@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="CountdownDB" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="CountdownDBContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Exercises" EntityType="CountdownDB.Exercises" />
+    <EntitySet Name="Settings" EntityType="CountdownDB.Settings" />
+    <EntitySet Name="ReminderSettings" EntityType="CountdownDB.ReminderSettings" />
+    <EntitySet Name="Reminders" EntityType="CountdownDB.Reminder" />
+    <AssociationSet Name="ReminderReminderSettings" Association="CountdownDB.ReminderReminderSettings">
+      <End EntitySet="Reminders" Role="Reminder" />
+      <End EntitySet="ReminderSettings" Role="ReminderSettings" />
+    </AssociationSet>
+    <AssociationSet Name="SettingsReminderSettings" Association="CountdownDB.SettingsReminderSettings">
+      <End EntitySet="Settings" Role="Settings" />
+      <End EntitySet="ReminderSettings" Role="ReminderSettings" />
+    </AssociationSet>
+    <AssociationSet Name="ReminderExercises" Association="CountdownDB.ReminderExercises">
+      <End EntitySet="Reminders" Role="Reminder" />
+      <End EntitySet="Exercises" Role="Exercises" />
+    </AssociationSet>
+    <EntitySet Name="TypeOfReminders" EntityType="CountdownDB.TypeOfReminder" />
+    <AssociationSet Name="TypeOfReminderReminder" Association="CountdownDB.TypeOfReminderReminder">
+      <End EntitySet="TypeOfReminders" Role="TypeOfReminder" />
+      <End EntitySet="Reminders" Role="Reminder" />
+    </AssociationSet>
+    <EntitySet Name="ProgressSettings" EntityType="CountdownDB.ProgressSettings" />
+    <EntitySet Name="CountdownSettings" EntityType="CountdownDB.CountdownSettings" />
+    <AssociationSet Name="ProgressSettingsReminder" Association="CountdownDB.ProgressSettingsReminder">
+      <End EntitySet="ProgressSettings" Role="ProgressSettings" />
+      <End EntitySet="Reminders" Role="Reminder" />
+    </AssociationSet>
+    <AssociationSet Name="CountdownSettingsReminder" Association="CountdownDB.CountdownSettingsReminder">
+      <End EntitySet="CountdownSettings" Role="CountdownSettings" />
+      <End EntitySet="Reminders" Role="Reminder" />
+    </AssociationSet>
+    <EntitySet Name="Files" EntityType="CountdownDB.Files" />
+    <AssociationSet Name="ExercisesFiles" Association="CountdownDB.ExercisesFiles">
+      <End EntitySet="Exercises" Role="Exercises" />
+      <End EntitySet="Files" Role="Files" />
+    </AssociationSet>
+    <EntitySet Name="Days" EntityType="CountdownDB.Days" />
+    <EntitySet Name="Weeks" EntityType="CountdownDB.Weeks" />
+    <EntitySet Name="Monthes" EntityType="CountdownDB.Monthes" />
+    <AssociationSet Name="CountdownSettingsDays" Association="CountdownDB.CountdownSettingsDays">
+      <End EntitySet="CountdownSettings" Role="CountdownSettings" />
+      <End EntitySet="Days" Role="Days" />
+    </AssociationSet>
+    <AssociationSet Name="CountdownSettingsWeeks" Association="CountdownDB.CountdownSettingsWeeks">
+      <End EntitySet="CountdownSettings" Role="CountdownSettings" />
+      <End EntitySet="Weeks" Role="Weeks" />
+    </AssociationSet>
+    <AssociationSet Name="CountdownSettingsMonthes" Association="CountdownDB.CountdownSettingsMonthes">
+      <End EntitySet="CountdownSettings" Role="CountdownSettings" />
+      <End EntitySet="Monthes" Role="Monthes" />
+    </AssociationSet>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(CountdownDB.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(CountdownDB.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <EntitySet Name="Images" EntityType="CountdownDB.Images" />
+    <AssociationSet Name="ImagesFiles" Association="CountdownDB.ImagesFiles">
+      <End EntitySet="Images" Role="Images" />
+      <End EntitySet="Files" Role="Files" />
+    </AssociationSet>
+    <AssociationSet Name="TypeOfReminderSettings" Association="CountdownDB.TypeOfReminderSettings">
+      <End Role="TypeOfReminder" EntitySet="TypeOfReminders" />
+      <End Role="Settings" EntitySet="Settings" />
+    </AssociationSet>
+    <EntitySet Name="Users" EntityType="CountdownDB.Users" />
+    <AssociationSet Name="ReminderUsers" Association="CountdownDB.ReminderUsers">
+      <End Role="Reminder" EntitySet="Reminders" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Exercises">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="Name" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" Type="String" />
+    <Property Name="Description" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" Type="String" />
+    <NavigationProperty Name="Reminder" Relationship="CountdownDB.ReminderExercises" FromRole="Exercises" ToRole="Reminder" />
+    <Property Name="ReminderId" Nullable="true" Type="Int32" />
+    <NavigationProperty Name="Files" Relationship="CountdownDB.ExercisesFiles" FromRole="Exercises" ToRole="Files" />
+  </EntityType>
+  <EntityType Name="Settings">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Nullable="false" annotation:StoreGeneratedPattern="None" Type="Int32" />
+    <Property Name="Name" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" Type="String" />
+    <Property Name="Description" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" Type="String" />
+    <NavigationProperty Name="ReminderSettings" Relationship="CountdownDB.SettingsReminderSettings" FromRole="Settings" ToRole="ReminderSettings" />
+    <NavigationProperty Name="TypeOfReminder" Relationship="CountdownDB.TypeOfReminderSettings" FromRole="Settings" ToRole="TypeOfReminder" />
+    <Property Name="TypeOfReminderId" Type="Int32" Nullable="false" />
+    <Property Name="NameProperty" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="NameElement" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ReminderSettings">
+    <Key>
+      <PropertyRef Name="ReminderId" />
+      <PropertyRef Name="SettingsId" />
+    </Key>
+    <NavigationProperty Name="Reminder" Relationship="CountdownDB.ReminderReminderSettings" FromRole="ReminderSettings" ToRole="Reminder" />
+    <Property Name="ReminderId" Nullable="false" Type="Int32" />
+    <NavigationProperty Name="Setting" Relationship="CountdownDB.SettingsReminderSettings" FromRole="ReminderSettings" ToRole="Settings" />
+    <Property Name="SettingsId" Nullable="false" Type="Int32" />
+    <Property Name="ValueSetting" MaxLength="Max" FixedLength="false" Unicode="true" Type="String" />
+  </EntityType>
+  <EntityType Name="Reminder">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="Name" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" Type="String" />
+    <Property Name="Description" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" Type="String" />
+    <NavigationProperty Name="ReminderSettings" Relationship="CountdownDB.ReminderReminderSettings" FromRole="Reminder" ToRole="ReminderSettings" />
+    <NavigationProperty Name="Exercises" Relationship="CountdownDB.ReminderExercises" FromRole="Reminder" ToRole="Exercises" />
+    <NavigationProperty Name="TypeOfReminder" Relationship="CountdownDB.TypeOfReminderReminder" FromRole="Reminder" ToRole="TypeOfReminder" />
+    <Property Name="TypeOfReminderId" Nullable="false" Type="Int32" />
+    <NavigationProperty Name="ProgressSetting" Relationship="CountdownDB.ProgressSettingsReminder" FromRole="Reminder" ToRole="ProgressSettings" />
+    <NavigationProperty Name="CountdownSetting" Relationship="CountdownDB.CountdownSettingsReminder" FromRole="Reminder" ToRole="CountdownSettings" />
+    <NavigationProperty Name="User" Relationship="CountdownDB.ReminderUsers" FromRole="Reminder" ToRole="Users" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <Association Name="ReminderReminderSettings">
+    <End Type="CountdownDB.Reminder" Multiplicity="1" Role="Reminder">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="CountdownDB.ReminderSettings" Multiplicity="*" Role="ReminderSettings" />
+    <ReferentialConstraint>
+      <Principal Role="Reminder">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ReminderSettings">
+        <PropertyRef Name="ReminderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SettingsReminderSettings">
+    <End Type="CountdownDB.Settings" Multiplicity="1" Role="Settings" />
+    <End Type="CountdownDB.ReminderSettings" Multiplicity="*" Role="ReminderSettings" />
+    <ReferentialConstraint>
+      <Principal Role="Settings">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ReminderSettings">
+        <PropertyRef Name="SettingsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ReminderExercises">
+    <End Type="CountdownDB.Reminder" Multiplicity="0..1" Role="Reminder">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="CountdownDB.Exercises" Multiplicity="*" Role="Exercises" />
+    <ReferentialConstraint>
+      <Principal Role="Reminder">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Exercises">
+        <PropertyRef Name="ReminderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="TypeOfReminder">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Nullable="false" annotation:StoreGeneratedPattern="None" Type="Int32" />
+    <NavigationProperty Name="Reminders" Relationship="CountdownDB.TypeOfReminderReminder" FromRole="TypeOfReminder" ToRole="Reminder" />
+    <Property Name="Name" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" Type="String" />
+    <Property Name="Description" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" Type="String" />
+    <NavigationProperty Name="Settings" Relationship="CountdownDB.TypeOfReminderSettings" FromRole="TypeOfReminder" ToRole="Settings" />
+  </EntityType>
+  <Association Name="TypeOfReminderReminder">
+    <End Type="CountdownDB.TypeOfReminder" Multiplicity="1" Role="TypeOfReminder" />
+    <End Type="CountdownDB.Reminder" Multiplicity="*" Role="Reminder" />
+    <ReferentialConstraint>
+      <Principal Role="TypeOfReminder">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Reminder">
+        <PropertyRef Name="TypeOfReminderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="ProgressSettings">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="Interval" Nullable="false" Type="Int32" />
+    <Property Name="Duration" Nullable="false" Type="Int32" />
+    <Property Name="Start" Nullable="false" Precision="3" Type="DateTime" />
+    <NavigationProperty Name="Reminder" Relationship="CountdownDB.ProgressSettingsReminder" FromRole="ProgressSettings" ToRole="Reminder" />
+  </EntityType>
+  <EntityType Name="CountdownSettings">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="Duration" Nullable="false" Type="Int32" />
+    <Property Name="Start" Nullable="false" Precision="3" Type="DateTime" />
+    <NavigationProperty Name="Reminder" Relationship="CountdownDB.CountdownSettingsReminder" FromRole="CountdownSettings" ToRole="Reminder" />
+    <NavigationProperty Name="Days" Relationship="CountdownDB.CountdownSettingsDays" FromRole="CountdownSettings" ToRole="Days" />
+    <NavigationProperty Name="Weeks" Relationship="CountdownDB.CountdownSettingsWeeks" FromRole="CountdownSettings" ToRole="Weeks" />
+    <NavigationProperty Name="Monthes" Relationship="CountdownDB.CountdownSettingsMonthes" FromRole="CountdownSettings" ToRole="Monthes" />
+  </EntityType>
+  <Association Name="ProgressSettingsReminder">
+    <End Type="CountdownDB.ProgressSettings" Multiplicity="0..1" Role="ProgressSettings" />
+    <End Type="CountdownDB.Reminder" Multiplicity="1" Role="Reminder">
+      <OnDelete Action="Cascade" />
+    </End>
+  </Association>
+  <Association Name="CountdownSettingsReminder">
+    <End Type="CountdownDB.CountdownSettings" Multiplicity="0..1" Role="CountdownSettings" />
+    <End Type="CountdownDB.Reminder" Multiplicity="1" Role="Reminder">
+      <OnDelete Action="Cascade" />
+    </End>
+  </Association>
+  <EntityType Name="Files">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="Name" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" Type="String" />
+    <Property Name="Description" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" Type="String" />
+    <NavigationProperty Name="Exercis" Relationship="CountdownDB.ExercisesFiles" FromRole="Files" ToRole="Exercises" />
+    <Property Name="ExercisesId" Nullable="false" Type="Int32" />
+    <NavigationProperty Name="Images" Relationship="CountdownDB.ImagesFiles" FromRole="Files" ToRole="Images" />
+  </EntityType>
+  <Association Name="ExercisesFiles">
+    <End Type="CountdownDB.Exercises" Multiplicity="1" Role="Exercises">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="CountdownDB.Files" Multiplicity="*" Role="Files" />
+    <ReferentialConstraint>
+      <Principal Role="Exercises">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Files">
+        <PropertyRef Name="ExercisesId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Days">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="Name" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" Type="String" />
+    <NavigationProperty Name="CountdownSetting" Relationship="CountdownDB.CountdownSettingsDays" FromRole="Days" ToRole="CountdownSettings" />
+    <Property Name="CountdownSettingsId" Nullable="false" Type="Int32" />
+    <Property Name="Number" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Weeks">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="Number" Nullable="false" Type="Int32" />
+    <NavigationProperty Name="CountdownSetting" Relationship="CountdownDB.CountdownSettingsWeeks" FromRole="Weeks" ToRole="CountdownSettings" />
+    <Property Name="CountdownSettingsId" Nullable="false" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Monthes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="Name" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" Type="String" />
+    <NavigationProperty Name="CountdownSetting" Relationship="CountdownDB.CountdownSettingsMonthes" FromRole="Monthes" ToRole="CountdownSettings" />
+    <Property Name="CountdownSettingsId" Nullable="false" Type="Int32" />
+    <Property Name="Number" Nullable="false" Type="Int32" />
+  </EntityType>
+  <Association Name="CountdownSettingsDays">
+    <End Type="CountdownDB.CountdownSettings" Multiplicity="1" Role="CountdownSettings">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="CountdownDB.Days" Multiplicity="*" Role="Days" />
+    <ReferentialConstraint>
+      <Principal Role="CountdownSettings">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Days">
+        <PropertyRef Name="CountdownSettingsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CountdownSettingsWeeks">
+    <End Type="CountdownDB.CountdownSettings" Multiplicity="1" Role="CountdownSettings">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="CountdownDB.Weeks" Multiplicity="*" Role="Weeks" />
+    <ReferentialConstraint>
+      <Principal Role="CountdownSettings">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Weeks">
+        <PropertyRef Name="CountdownSettingsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CountdownSettingsMonthes">
+    <End Type="CountdownDB.CountdownSettings" Multiplicity="1" Role="CountdownSettings">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="CountdownDB.Monthes" Multiplicity="*" Role="Monthes" />
+    <ReferentialConstraint>
+      <Principal Role="CountdownSettings">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Monthes">
+        <PropertyRef Name="CountdownSettingsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="Images">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="Type" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" Type="String" />
+    <Property Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" Type="String" />
+    <NavigationProperty Name="File" Relationship="CountdownDB.ImagesFiles" FromRole="Images" ToRole="Files" />
+    <Property Name="FilesId" Nullable="false" Type="Int32" />
+    <Property Name="Data" Nullable="false" MaxLength="Max" FixedLength="false" Type="Binary" />
+  </EntityType>
+  <Association Name="ImagesFiles">
+    <End Type="CountdownDB.Images" Multiplicity="*" Role="Images" />
+    <End Type="CountdownDB.Files" Multiplicity="1" Role="Files">
+      <OnDelete Action="Cascade" />
+    </End>
+    <ReferentialConstraint>
+      <Principal Role="Files">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Images">
+        <PropertyRef Name="FilesId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TypeOfReminderSettings">
+    <End Type="CountdownDB.TypeOfReminder" Role="TypeOfReminder" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="CountdownDB.Settings" Role="Settings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TypeOfReminder">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Settings">
+        <PropertyRef Name="TypeOfReminderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Reminders" Relationship="CountdownDB.ReminderUsers" FromRole="Users" ToRole="Reminder" />
+  </EntityType>
+  <Association Name="ReminderUsers">
+    <End Type="CountdownDB.Reminder" Role="Reminder" Multiplicity="*" />
+    <End Type="CountdownDB.Users" Role="Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Name" />
+      </Principal>
+      <Dependent Role="Reminder">
+        <PropertyRef Name="UserName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

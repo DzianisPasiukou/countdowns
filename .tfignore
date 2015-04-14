@@ -1,0 +1,140 @@
+﻿################################################################################
+# This .tfignore file was automatically created by Microsoft(R) Visual Studio.
+#
+# Local items matching filespecs in this file will not be added to version
+# control. This file can be checked in to share exclusions with others.
+#
+# Wildcard characters are * and ?. Patterns are matched recursively unless the
+# pattern is prefixed by the \ character.
+#
+# You can prepend a path to a pattern to make it more specific. If you do,
+# wildcard characters are not permitted in the path portion.
+#
+# The # character at the beginning of a line indicates a comment.
+#
+# The ! prefix negates a pattern. This can be used to re-include an item after
+# it was excluded by a .tfignore file higher in the tree, or by the Team
+# Project Collection's global exclusions list.
+#
+# The / character is interpreted as a \ character on Windows platforms.
+#
+# Examples:
+#
+#  # Excludes all files ending in .txt in Alpha\Beta and all its subfolders.
+#  Alpha\Beta\*.txt
+#
+#  # Excludes all files ending in .cpp in this folder only.
+#  \*.cpp
+#
+#  # Excludes all files ending in .cpp in this folder and all subfolders.
+#  *.cpp
+#
+#  # If "Contoso" is a folder, then Contoso and all its children are excluded.
+#  # If it is a file, then only the "Contoso" in this folder is excluded.
+#  \Contoso
+#
+#  # If Help.exe is excluded by a higher .tfignore file or by the Team Project
+#  # Collection global exclusions list, then this pattern re-includes it in
+#  # this folder only.
+#  !\Help.exe    
+#
+################################################################################
+
+\packages
+
+\logs
+\CountdownMvc\logs\2015-03-12\MINSK\Dzianis_Pasiukou1\CountdownMvc.Controllers.CountdownApiController.txt
+\CountdownMvc\logs\2015-03-12\MINSK\Dzianis_Pasiukou1\CountdownMvc.Controllers.SettingsApiController.txt
+\CountdownWcfService\logs\2015-03-12\MINSK\Dzianis_Pasiukou1\CountdownWcfService.CountdownService.txt
+\CountdownMvc\logs\2015-03-13\MINSK\Dzianis_Pasiukou1
+\CountdownWcfService\logs\2015-03-13\MINSK\Dzianis_Pasiukou1
+\Countdown\CountdownWcf\CountdownWcfService\logs\2015-03-13\MINSK\Dzianis_Pasiukou1\CountdownWcfService.CountdownService.txt
+\Countdown\CountdownWcf\CountdownWcfService\logs\2015-03-16\MINSK\Dzianis_Pasiukou1
+\Countdown\CountdownWcf\CountdownWcfService\logs\2015-03-17\MINSK\Dzianis_Pasiukou1
+\Countdown\CountdownWcf\CountdownWcfService\logs\2015-03-18\MINSK\Dzianis_Pasiukou1\CountdownWcfService.CountdownService.txt
+\Countdown\CountdownWcf\CountdownWcfService\logs\2015-03-19\MINSK\Dzianis_Pasiukou1\CountdownWcfService.CountdownService.txt
+\Countdown\CountdownWcf\CountdownWcfService\logs\2015-03-20\MINSK\Dzianis_Pasiukou1\CountdownWcfService.CountdownService.txt
+\Countdown\CountdownWcf\packages\EntityFramework.6.1.3\EntityFramework.6.1.3.nupkg
+\Countdown\CountdownWcf\packages\EntityFramework.6.1.3\EntityFramework.6.1.3.nuspec
+\Countdown\CountdownWcf\packages\EntityFramework.6.1.3\content\App.config.transform
+\Countdown\CountdownWcf\packages\EntityFramework.6.1.3\content\Web.config.transform
+\Countdown\CountdownWcf\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.SqlServer.xml
+\Countdown\CountdownWcf\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.xml
+\Countdown\CountdownWcf\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.xml
+\Countdown\CountdownWcf\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.xml
+\Countdown\CountdownWcf\packages\EntityFramework.6.1.3\tools\about_EntityFramework.help.txt
+\Countdown\CountdownWcf\packages\EntityFramework.6.1.3\tools\EntityFramework.psd1
+\Countdown\CountdownWcf\packages\EntityFramework.6.1.3\tools\EntityFramework.psm1
+\Countdown\CountdownWcf\packages\EntityFramework.6.1.3\tools\init.ps1
+\Countdown\CountdownWcf\packages\EntityFramework.6.1.3\tools\install.ps1
+\Countdown\CountdownWcf\packages\NLog.3.2.0.0\NLog.3.2.0.0.nupkg
+\Countdown\CountdownWcf\packages\NLog.3.2.0.0\NLog.3.2.0.0.nuspec
+\Countdown\CountdownWcf\packages\NLog.3.2.0.0\lib\net35\NLog.xml
+\Countdown\CountdownWcf\packages\NLog.3.2.0.0\lib\net40\NLog.xml
+\Countdown\CountdownWcf\packages\NLog.3.2.0.0\lib\net45\NLog.xml
+\Countdown\CountdownWcf\packages\NLog.3.2.0.0\lib\sl4\NLog.xml
+\Countdown\CountdownWcf\packages\NLog.3.2.0.0\lib\sl5\NLog.xml
+\Countdown\CountdownWcf\packages\Unity.3.5.1404.0\Unity.3.5.1404.0.nupkg
+\Countdown\CountdownWcf\packages\Unity.3.5.1404.0\Unity.3.5.1404.0.nuspec
+\Countdown\CountdownWcf\packages\Unity.3.5.1404.0\UnityConfiguration30.xsd
+\Countdown\CountdownWcf\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.Configuration.XML
+\Countdown\CountdownWcf\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.XML
+\Countdown\CountdownWcf\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.xml
+\Countdown\CountdownWcf\packages\Unity.3.5.1404.0\lib\portable-net45+wp80+win8+MonoAndroid10+MonoTouch10\Microsoft.Practices.Unity.xml
+\Countdown\CountdownWcf\packages\Unity.3.5.1404.0\lib\win8\Microsoft.Practices.Unity.RegistrationByConvention.XML
+\Countdown\CountdownWcf\packages\Unity.3.5.1404.0\lib\win8\Microsoft.Practices.Unity.xml
+\Countdown\CountdownWcf\packages\Unity.3.5.1404.0\lib\wp80\Microsoft.Practices.Unity.RegistrationByConvention.XML
+\Countdown\CountdownWcf\packages\Unity.3.5.1404.0\lib\wp80\Microsoft.Practices.Unity.xml
+\Countdown\CountdownWcf\packages\Unity.Wcf.1.0.0\Build.bat
+\Countdown\CountdownWcf\packages\Unity.Wcf.1.0.0\Unity.Wcf.1.0.0.nupkg
+\Countdown\CountdownWcf\packages\Unity.Wcf.1.0.0\Unity.Wcf.1.0.0.nuspec
+\Countdown\CountdownWcf\packages\Unity.Wcf.1.0.0\content\Unity.Wcf.README.txt
+\Countdown\CountdownWcf\packages\Unity.Wcf.1.0.0\content\WcfServiceFactory.cs.pp
+\Countdown\CountdownWpf\packages\NLog.3.2.0.0\NLog.3.2.0.0.nupkg
+\Countdown\CountdownWpf\packages\NLog.3.2.0.0\NLog.3.2.0.0.nuspec
+\Countdown\CountdownWpf\packages\NLog.3.2.0.0\lib\net35\NLog.xml
+\Countdown\CountdownWpf\packages\NLog.3.2.0.0\lib\net40\NLog.xml
+\Countdown\CountdownWpf\packages\NLog.3.2.0.0\lib\net45\NLog.xml
+\Countdown\CountdownWpf\packages\NLog.3.2.0.0\lib\sl4\NLog.xml
+\Countdown\CountdownWpf\packages\NLog.3.2.0.0\lib\sl5\NLog.xml
+\Countdown\CountdownWpf\packages\Unity.3.5.1404.0\Unity.3.5.1404.0.nupkg
+\Countdown\CountdownWpf\packages\Unity.3.5.1404.0\Unity.3.5.1404.0.nuspec
+\Countdown\CountdownWpf\packages\Unity.3.5.1404.0\UnityConfiguration30.xsd
+\Countdown\CountdownWpf\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.Configuration.XML
+\Countdown\CountdownWpf\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.XML
+\Countdown\CountdownWpf\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.xml
+\Countdown\CountdownWpf\packages\Unity.3.5.1404.0\lib\portable-net45+wp80+win8+MonoAndroid10+MonoTouch10\Microsoft.Practices.Unity.xml
+\Countdown\CountdownWpf\packages\Unity.3.5.1404.0\lib\win8\Microsoft.Practices.Unity.RegistrationByConvention.XML
+\Countdown\CountdownWpf\packages\Unity.3.5.1404.0\lib\win8\Microsoft.Practices.Unity.xml
+\Countdown\CountdownWpf\packages\Unity.3.5.1404.0\lib\wp80\Microsoft.Practices.Unity.RegistrationByConvention.XML
+\Countdown\CountdownWpf\packages\Unity.3.5.1404.0\lib\wp80\Microsoft.Practices.Unity.xml
+\CountdownDataBaseLayer\Countdown.Context.cs
+\CountdownDataBaseLayer\Countdown.Context.tt
+\CountdownDataBaseLayer\Countdown.cs
+\CountdownDataBaseLayer\Countdown.Designer.cs
+\CountdownDataBaseLayer\Countdown.edmx
+\CountdownDataBaseLayer\Countdown.edmx.diagram
+\CountdownDataBaseLayer\Countdown.tt
+\CountdownDataBaseLayer\CountdownDB.Context1.cs
+\CountdownDataBaseLayer\CountdownDB1.cs
+\CountdownDataBaseLayer\CountdownDB1.Designer.cs
+\CountdownDataBaseLayer\CountdownSetting.cs
+\CountdownDataBaseLayer\Day.cs
+\CountdownDataBaseLayer\Exercis.cs
+\CountdownDataBaseLayer\File.cs
+\CountdownDataBaseLayer\Image.cs
+\CountdownDataBaseLayer\Model1.Context.cs
+\CountdownDataBaseLayer\Model1.Context.tt
+\CountdownDataBaseLayer\Model1.cs
+\CountdownDataBaseLayer\Model1.tt
+\CountdownDataBaseLayer\Monthe.cs
+\CountdownDataBaseLayer\ProgressSetting.cs
+\CountdownDataBaseLayer\ReminderSetting.cs
+\CountdownDataBaseLayer\Setting.cs
+\CountdownDataBaseLayer\Week.cs
+\CountdownMvc\logs\2015-03-19\MINSK\Dzianis_Pasiukou1\CountdownMvc.Controllers.CountdownApiController.txt
+\CountdownMvc\logs\2015-03-19\MINSK\Dzianis_Pasiukou1\CountdownMvc.Controllers.SettingsApiController.txt
+\CountdownMvc\logs\2015-03-20\MINSK\Dzianis_Pasiukou1\CountdownMvc.Controllers.CountdownApiController.txt
+\CountdownMvc\logs\2015-03-20\MINSK\Dzianis_Pasiukou1\CountdownMvc.Controllers.SettingsApiController.txt
+\CountdownMvc\logs\2015-03-23\MINSK\Dzianis_Pasiukou1\CountdownMvc.Controllers.CountdownApiController.txt
+\CountdownMvc\logs\2015-03-23\MINSK\Dzianis_Pasiukou1\CountdownMvc.Controllers.SettingsApiController.txt

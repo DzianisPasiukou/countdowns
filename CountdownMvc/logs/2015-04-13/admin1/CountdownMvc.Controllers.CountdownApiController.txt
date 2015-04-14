@@ -1,0 +1,233 @@
+,{ 'Date': '2015-04-13 15:03:00.8366', 'Callsite': 'LoggingManager.MyLogger`1.Write', 'Level log' : 'Info', 'Message' : 'Gets the countdowns. 
+ Return value is 
+ []', 'Exception': ''}
+,{ 'Date': '2015-04-13 16:27:54.1736', 'Callsite': 'LoggingManager.MyLogger`1.Write', 'Level log' : 'Info', 'Message' : 'Gets the countdowns. 
+ Return value is 
+ []', 'Exception': ''}
+,{ 'Date': '2015-04-13 19:12:04.5602', 'Callsite': 'LoggingManager.MyLogger`1.Write', 'Level log' : 'Info', 'Message' : 'Gets the countdowns. 
+ Return value is 
+ []', 'Exception': ''}
+,{ 'Date': '2015-04-13 19:12:08.0652', 'Callsite': 'LoggingManager.MyLogger`1.Write', 'Level log' : 'Info', 'Message' : 'Adding countdown. 
+ Post value is 
+ {
+  "Reminder": {
+    "Id": 0,
+    "Name": "q",
+    "Description": "q",
+    "UserName": null,
+    "TypeOfReminder": {
+      "Id": 1,
+      "Name": null,
+      "Description": null
+    },
+    "CountdownSettings": {
+      "Duration": 0,
+      "Days": [],
+      "Weeks": [],
+      "Months": [],
+      "Start": "2015-04-13T17:00:07.665Z",
+      "End": "0001-01-01T00:00:00",
+      "Id": 0
+    },
+    "ProgressSettings": null,
+    "ReminderSettings": null,
+    "Exercises": null
+  }
+}', 'Exception': ''}
+,{ 'Date': '2015-04-13 19:12:08.6642', 'Callsite': 'LoggingManager.MyLogger`1.Write', 'Level log' : 'Info', 'Message' : 'Adding countdown. 
+ After adding value is 
+ {
+  "Reminder": {
+    "Id": 3,
+    "Name": "q",
+    "Description": "q",
+    "UserName": "admin1",
+    "TypeOfReminder": {
+      "Id": 1,
+      "Name": "Countdown",
+      "Description": "Countdown"
+    },
+    "CountdownSettings": {
+      "Duration": 0,
+      "Days": [],
+      "Weeks": [],
+      "Months": [],
+      "Start": "2015-04-13T17:00:07.665Z",
+      "End": "2015-04-13T17:00:07.665Z",
+      "Id": 3
+    },
+    "ProgressSettings": null,
+    "ReminderSettings": [],
+    "Exercises": []
+  }
+}', 'Exception': ''}
+,{ 'Date': '2015-04-13 19:17:06.7717', 'Callsite': 'LoggingManager.MyLogger`1.Write', 'Level log' : 'Info', 'Message' : 'Gets the countdowns. 
+ Return value is 
+ [
+  {
+    "Reminder": {
+      "Id": 3,
+      "Name": "q",
+      "Description": "q",
+      "UserName": "admin1",
+      "TypeOfReminder": {
+        "Id": 1,
+        "Name": "Countdown",
+        "Description": "Countdown"
+      },
+      "CountdownSettings": {
+        "Duration": 0,
+        "Days": [],
+        "Weeks": [],
+        "Months": [],
+        "Start": "2015-04-13T17:00:07.667Z",
+        "End": "2015-04-13T17:00:07.667Z",
+        "Id": 3
+      },
+      "ProgressSettings": null,
+      "ReminderSettings": [],
+      "Exercises": []
+    }
+  }
+]', 'Exception': ''}
+,{ 'Date': '2015-04-13 19:17:17.8237', 'Callsite': 'LoggingManager.MyLogger`1.Write', 'Level log' : 'Info', 'Message' : 'Gets the countdowns. 
+ Return value is 
+ [
+  {
+    "Reminder": {
+      "Id": 3,
+      "Name": "q",
+      "Description": "q",
+      "UserName": "admin1",
+      "TypeOfReminder": {
+        "Id": 1,
+        "Name": "Countdown",
+        "Description": "Countdown"
+      },
+      "CountdownSettings": {
+        "Duration": 0,
+        "Days": [],
+        "Weeks": [],
+        "Months": [],
+        "Start": "2015-04-13T17:00:07.667Z",
+        "End": "2015-04-13T17:00:07.667Z",
+        "Id": 3
+      },
+      "ProgressSettings": null,
+      "ReminderSettings": [],
+      "Exercises": []
+    }
+  }
+]', 'Exception': ''}
+,{ 'Date': '2015-04-13 19:17:26.4007', 'Callsite': 'LoggingManager.MyLogger`1.Write', 'Level log' : 'Info', 'Message' : 'Gets the countdowns. 
+ Return value is 
+ [
+  {
+    "Reminder": {
+      "Id": 3,
+      "Name": "q",
+      "Description": "q",
+      "UserName": "admin1",
+      "TypeOfReminder": {
+        "Id": 1,
+        "Name": "Countdown",
+        "Description": "Countdown"
+      },
+      "CountdownSettings": {
+        "Duration": 0,
+        "Days": [],
+        "Weeks": [],
+        "Months": [],
+        "Start": "2015-04-13T17:00:07.667Z",
+        "End": "2015-04-13T17:00:07.667Z",
+        "Id": 3
+      },
+      "ProgressSettings": null,
+      "ReminderSettings": [],
+      "Exercises": []
+    }
+  }
+]', 'Exception': ''}
+,{ 'Date': '2015-04-13 19:21:43.9694', 'Callsite': 'LoggingManager.MyLogger`1.Write', 'Level log' : 'Info', 'Message' : 'Gets the countdowns. 
+ Return value is 
+ [
+  {
+    "Reminder": {
+      "Id": 3,
+      "Name": "q",
+      "Description": "q",
+      "UserName": "admin1",
+      "TypeOfReminder": {
+        "Id": 1,
+        "Name": "Countdown",
+        "Description": "Countdown"
+      },
+      "CountdownSettings": {
+        "Duration": 0,
+        "Days": [],
+        "Weeks": [],
+        "Months": [],
+        "Start": "2015-04-13T17:00:07.667Z",
+        "End": "2015-04-13T17:00:07.667Z",
+        "Id": 3
+      },
+      "ProgressSettings": null,
+      "ReminderSettings": [],
+      "Exercises": []
+    }
+  }
+]', 'Exception': ''}
+,{ 'Date': '2015-04-13 19:21:57.7714', 'Callsite': 'LoggingManager.MyLogger`1.Write', 'Level log' : 'Info', 'Message' : 'Update countdown. 
+ Put value is 
+ {
+  "Reminder": {
+    "Id": 3,
+    "Name": "q",
+    "Description": "q",
+    "UserName": "admin1",
+    "TypeOfReminder": {
+      "Id": 1,
+      "Name": "Countdown",
+      "Description": "Countdown"
+    },
+    "CountdownSettings": {
+      "Duration": 0,
+      "Days": [],
+      "Weeks": [],
+      "Months": [],
+      "Start": "2015-04-13T17:00:07.667Z",
+      "End": "2015-04-13T17:00:07.667Z",
+      "Id": 3
+    },
+    "ProgressSettings": null,
+    "ReminderSettings": [],
+    "Exercises": []
+  }
+}', 'Exception': ''}
+,{ 'Date': '2015-04-13 19:21:58.5454', 'Callsite': 'LoggingManager.MyLogger`1.Write', 'Level log' : 'Info', 'Message' : 'Update countdown. 
+ After update value is 
+ {
+  "Reminder": {
+    "Id": 3,
+    "Name": "q",
+    "Description": "q",
+    "UserName": "admin1",
+    "TypeOfReminder": {
+      "Id": 1,
+      "Name": "Countdown",
+      "Description": "Countdown"
+    },
+    "CountdownSettings": {
+      "Duration": 0,
+      "Days": [],
+      "Weeks": [],
+      "Months": [],
+      "Start": "2015-04-13T20:00:07.667+03:00",
+      "End": "2015-04-13T17:00:07.667Z",
+      "Id": 3
+    },
+    "ProgressSettings": null,
+    "ReminderSettings": [],
+    "Exercises": []
+  }
+}', 'Exception': ''}

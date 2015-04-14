@@ -1,0 +1,9 @@
+D:\Projects\CountdownMvc\LoggingManager\bin\Release\LoggingManager.dll
+D:\Projects\CountdownMvc\LoggingManager\bin\Release\LoggingManager.pdb
+D:\Projects\CountdownMvc\LoggingManager\bin\Release\Newtonsoft.Json.dll
+D:\Projects\CountdownMvc\LoggingManager\bin\Release\NLog.dll
+D:\Projects\CountdownMvc\LoggingManager\bin\Release\Newtonsoft.Json.xml
+D:\Projects\CountdownMvc\LoggingManager\bin\Release\NLog.xml
+D:\Projects\CountdownMvc\LoggingManager\obj\Release\LoggingManager.csprojResolveAssemblyReference.cache
+D:\Projects\CountdownMvc\LoggingManager\obj\Release\LoggingManager.dll
+D:\Projects\CountdownMvc\LoggingManager\obj\Release\LoggingManager.pdb

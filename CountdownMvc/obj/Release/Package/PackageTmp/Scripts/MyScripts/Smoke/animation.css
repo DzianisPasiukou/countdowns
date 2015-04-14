@@ -1,0 +1,20 @@
+﻿@-webkit-keyframes anim {
+	from {
+		margin-right: 3px;
+	}
+
+	to {
+		margin-right: 300px;
+	}
+}
+
+.anim {
+	
+}
+
+#canvas {
+	float: right;
+	transform: rotate(-90deg);
+	margin-top:0px;
+	margin-right:-10px;
+}

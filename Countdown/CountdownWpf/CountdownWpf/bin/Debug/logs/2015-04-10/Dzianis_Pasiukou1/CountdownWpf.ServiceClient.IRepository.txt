@@ -1,0 +1,289 @@
+Date: 2015-04-10 10:52:30.9588 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: admin 
+
+Date: 2015-04-10 10:57:32.3129 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: admin 
+
+Date: 2015-04-10 10:58:08.9107 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: admin 
+
+Date: 2015-04-10 10:58:17.1417 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: admin 
+
+Date: 2015-04-10 11:02:31.9081 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-10 11:06:16.9050 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-10 11:10:28.2926 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-10 11:10:37.4922 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-10 11:11:34.7612 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-10 11:12:19.8546 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-10 11:12:58.8602 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-10 11:26:10.6849 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: admin 
+
+Date: 2015-04-10 11:26:19.4839 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: admin 
+
+Date: 2015-04-10 11:28:17.9700 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-10 11:37:22.5739 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: admin 
+
+Date: 2015-04-10 11:37:44.3796 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: admin 
+
+Date: 2015-04-10 12:14:08.4527 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-10 12:16:12.3621 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-10 12:17:25.1042 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: admin 
+
+Date: 2015-04-10 12:17:29.7172 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: admin 
+
+Date: 2015-04-10 12:23:57.3426 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: admin 
+
+Date: 2015-04-10 12:36:32.1764 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: admin 
+
+Date: 2015-04-10 12:37:06.1804 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: admin 
+
+Date: 2015-04-10 12:37:23.1944 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-10 12:37:32.3012 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: admin 
+
+Date: 2015-04-10 12:37:36.0532 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: admin 
+
+Date: 2015-04-10 12:37:37.3632 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: admin 
+
+Date: 2015-04-10 12:37:40.0182 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: admin 
+
+Date: 2015-04-10 12:39:10.3481 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: admin 
+
+Date: 2015-04-10 12:39:15.4329 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: admin 
+
+Date: 2015-04-10 12:41:42.4630 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: admin 
+
+Date: 2015-04-10 12:41:53.1280 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: admin 
+
+Date: 2015-04-10 12:41:56.1200 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-10 12:43:55.4864 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-10 12:46:02.2181 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-10 12:46:13.7557 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-10 12:46:30.8511 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-10 12:47:08.0776 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-10 12:47:18.5413 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-10 12:47:41.1936 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-10 12:48:48.1912 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-10 12:49:20.3070 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-10 12:49:58.7758 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-10 12:51:07.1794 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: admin 
+
+Date: 2015-04-10 12:51:12.4974 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: admin 
+
+Date: 2015-04-10 12:51:14.4514 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-10 12:54:16.3004 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed with connected user  
+System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: One or more errors occurred. (Fault Detail is equal to An ExceptionDetail, likely created by IncludeExceptionDetailInFaults=true, whose value is:
+System.AggregateException: One or more errors occurred. ----> System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at System.Linq.Queryable.First[TSource](IQueryable`1 source, Expression`1 predicate)
+   at CountdownDataBaseLayer.Repo.UsersRepo.GetByName(String name) in d:\Projects\CountdownMvc\CountdownDataBaseLayer\Repo\UsersRepo.cs:line 36
+   at CountdownMvc.Models.UserIdentity.CustomUserStore.FindByNameAsync(String userName) in d:\Projects\CountdownMvc\CountdownMvc\Models\UserIdentity\CustomUserStore.cs:line 121
+   at CountdownMvc.Models.UserIdentity.CustomUserManager.<>c__DisplayClass1.<FindAsync>b__0() in d:\Projects\CountdownMvc\CountdownMvc\Models\UserIdentity\CustomUserManager.cs:line 44
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner ExceptionDetail stack tra...).
+Date: 2015-04-10 12:56:36.8572 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed with connected user  
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.OnConnectUser(String userName, String password)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.OnConnectUser(String userName, String password) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 98
+   at CountdownWpf.ServiceClient.ServiceRepository.<>c__DisplayClass1.<Connect>b__0() in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 246
+Date: 2015-04-10 12:56:39.6972 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed with disconnect user  
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.OnDisconnectUser(String userName)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.OnDisconnectUser(String userName) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 106
+   at CountdownWpf.ServiceClient.ServiceRepository.Disconnect() in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 216
+Date: 2015-04-10 12:56:57.0561 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+

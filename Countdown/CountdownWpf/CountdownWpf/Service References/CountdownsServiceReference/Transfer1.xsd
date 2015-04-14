@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Transfer" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Transfer" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="CountdownSettingsDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Days" nillable="true" type="tns:ArrayOfDaysDto" />
+      <xs:element minOccurs="0" name="Duration" type="xs:int" />
+      <xs:element minOccurs="0" name="End" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Months" nillable="true" type="tns:ArrayOfMonthsDto" />
+      <xs:element minOccurs="0" name="Start" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Weeks" nillable="true" type="tns:ArrayOfWeeksDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CountdownSettingsDto" nillable="true" type="tns:CountdownSettingsDto" />
+  <xs:complexType name="ArrayOfDaysDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DaysDto" nillable="true" type="tns:DaysDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDaysDto" nillable="true" type="tns:ArrayOfDaysDto" />
+  <xs:complexType name="DaysDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Number" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DaysDto" nillable="true" type="tns:DaysDto" />
+  <xs:complexType name="ArrayOfMonthsDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MonthsDto" nillable="true" type="tns:MonthsDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMonthsDto" nillable="true" type="tns:ArrayOfMonthsDto" />
+  <xs:complexType name="MonthsDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Number" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MonthsDto" nillable="true" type="tns:MonthsDto" />
+  <xs:complexType name="ArrayOfWeeksDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WeeksDto" nillable="true" type="tns:WeeksDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWeeksDto" nillable="true" type="tns:ArrayOfWeeksDto" />
+  <xs:complexType name="WeeksDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Number" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WeeksDto" nillable="true" type="tns:WeeksDto" />
+  <xs:complexType name="ProgressSettingsDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Duration" type="xs:int" />
+      <xs:element minOccurs="0" name="End" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Interval" type="xs:int" />
+      <xs:element minOccurs="0" name="Start" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProgressSettingsDto" nillable="true" type="tns:ProgressSettingsDto" />
+</xs:schema>

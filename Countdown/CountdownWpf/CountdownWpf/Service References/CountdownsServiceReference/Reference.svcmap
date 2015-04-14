@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6732bf93-e552-4711-8ae2-0b8e04190ef8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://countdownservice.azurewebsites.net/CountdownService.svc/mex/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service1.wsdl" MetadataType="Wsdl" ID="8771a3c2-30f4-40c8-badb-90d9b3b17187" SourceId="1" SourceUrl="http://countdownservice.azurewebsites.net/CountdownService.svc/mex/mex" />
+    <MetadataFile FileName="service2.xsd" MetadataType="Schema" ID="d8d93fa6-c018-42b9-b235-4cffd51ed815" SourceId="1" SourceUrl="http://countdownservice.azurewebsites.net/CountdownService.svc/mex/mex" />
+    <MetadataFile FileName="service21.xsd" MetadataType="Schema" ID="0327abf5-926d-4d42-87f1-859beb874fa6" SourceId="1" SourceUrl="http://countdownservice.azurewebsites.net/CountdownService.svc/mex/mex" />
+    <MetadataFile FileName="Transfer.SmallTransfer1.xsd" MetadataType="Schema" ID="c7c368ad-cf7b-46c0-b0bf-624b5433b49b" SourceId="1" SourceUrl="http://countdownservice.azurewebsites.net/CountdownService.svc/mex/mex" />
+    <MetadataFile FileName="Transfer1.xsd" MetadataType="Schema" ID="2eb5a1a0-88cc-4f3f-a3c7-56d2996e32ec" SourceId="1" SourceUrl="http://countdownservice.azurewebsites.net/CountdownService.svc/mex/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

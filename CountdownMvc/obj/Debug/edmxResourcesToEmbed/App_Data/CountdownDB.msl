@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CountdownDBStoreContainer" CdmEntityContainer="CountdownDBContainer">
+    <EntitySetMapping Name="ReminderProgresses">
+      <EntityTypeMapping TypeName="IsTypeOf(CountdownDB.ReminderProgress)">
+        <MappingFragment StoreEntitySet="ReminderProgresses">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Intervals">
+      <EntityTypeMapping TypeName="IsTypeOf(CountdownDB.Interval)">
+        <MappingFragment StoreEntitySet="Intervals">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Start" ColumnName="Start" />
+          <ScalarProperty Name="End" ColumnName="End" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Exercises">
+      <EntityTypeMapping TypeName="IsTypeOf(CountdownDB.Exercises)">
+        <MappingFragment StoreEntitySet="Exercises">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Settings">
+      <EntityTypeMapping TypeName="IsTypeOf(CountdownDB.Settings)">
+        <MappingFragment StoreEntitySet="Settings">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Durations">
+      <EntityTypeMapping TypeName="IsTypeOf(CountdownDB.Durations)">
+        <MappingFragment StoreEntitySet="Durations">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Years" ColumnName="Years" />
+          <ScalarProperty Name="Months" ColumnName="Months" />
+          <ScalarProperty Name="Days" ColumnName="Days" />
+          <ScalarProperty Name="Hours" ColumnName="Hours" />
+          <ScalarProperty Name="Minutes" ColumnName="Minutes" />
+          <ScalarProperty Name="Seconds" ColumnName="Seconds" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DurationsRepeats">
+      <EntityTypeMapping TypeName="IsTypeOf(CountdownDB.DurationsRepeat)">
+        <MappingFragment StoreEntitySet="DurationsRepeats">
+          <ScalarProperty Name="IntervalId" ColumnName="DurationsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReminderSettings">
+      <EntityTypeMapping TypeName="IsTypeOf(CountdownDB.ReminderSettings)">
+        <MappingFragment StoreEntitySet="ReminderSettings">
+          <ScalarProperty Name="SettingsId" ColumnName="SettingsId" />
+          <ScalarProperty Name="ReminderId" ColumnName="ReminderId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReminderExercises">
+      <EntityTypeMapping TypeName="IsTypeOf(CountdownDB.ReminderExercises)">
+        <MappingFragment StoreEntitySet="ReminderExercises">
+          <ScalarProperty Name="ReminderId" ColumnName="ReminderId" />
+          <ScalarProperty Name="ExercisesId" ColumnName="ExercisesId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reminders">
+      <EntityTypeMapping TypeName="IsTypeOf(CountdownDB.Reminder)">
+        <MappingFragment StoreEntitySet="Reminders">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="ReminderProgressRemindercountdown" TypeName="CountdownDB.ReminderProgressRemindercountdown" StoreEntitySet="ReminderProgresses">
+      <EndProperty Name="Remindercountdown">
+        <ScalarProperty Name="Id" ColumnName="Reminder_Id" />
+      </EndProperty>
+      <EndProperty Name="ReminderProgress">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

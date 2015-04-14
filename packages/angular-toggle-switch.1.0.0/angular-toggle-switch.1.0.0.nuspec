@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>angular-toggle-switch</id>
+    <version>1.0.0</version>
+    <title>angular-toggle-switch</title>
+    <authors>Christopher Garvis</authors>
+    <owners>Christopher Garvis</owners>
+    <projectUrl>https://github.com/cgarvis/angular-toggle-switch</projectUrl>
+    <iconUrl>https://secure.gravatar.com/avatar/6e1b5ab3ef1593413f1bee4e5a6e6ae7?s=140&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Toggle Switches for AngularJS. Based off Bootstrap switch by Matt Lartentis.</description>
+    <releaseNotes>Fix bug with disabling toggle; Wrap module in anonymous wrapper; Add app wide configuration; Fix copywright in license; Update to Bootstrap 3; Namespace styles; Fix error with classname; linted and fixed tests; updated to use ngModel; Fix bug with toggle not working; Replaced ng-click with element.on(); Implemented callback on toggle event; Add css to bower's main property;</releaseNotes>
+    <tags>angularjs angular toggle switch</tags>
+  </metadata>
+</package>

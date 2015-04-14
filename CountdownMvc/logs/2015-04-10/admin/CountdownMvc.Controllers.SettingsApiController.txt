@@ -1,0 +1,152 @@
+,{ 'Date': '2015-04-10 14:22:55.6976', 'Callsite': 'LoggingManager.MyLogger`1.Write', 'Level log' : 'Info', 'Message' : 'Get the full settings.
+ Return value is:
+ [
+  {
+    "Id": 1,
+    "Name": "Font for name",
+    "Description": "Font for name",
+    "TypeOfReminderId": 1,
+    "NameProperty": "font-family",
+    "NameElement": "reminderName"
+  },
+  {
+    "Id": 2,
+    "Name": "Font for name",
+    "Description": "Font for name",
+    "TypeOfReminderId": 2,
+    "NameProperty": "font-family",
+    "NameElement": "reminderName"
+  },
+  {
+    "Id": 3,
+    "Name": "Color of progress interval",
+    "Description": "Color of progress interval",
+    "TypeOfReminderId": 2,
+    "NameProperty": "background",
+    "NameElement": "progressInterval"
+  },
+  {
+    "Id": 4,
+    "Name": "Color of progress duration",
+    "Description": "Color of progress duration",
+    "TypeOfReminderId": 2,
+    "NameProperty": "background",
+    "NameElement": "progressDuration"
+  },
+  {
+    "Id": 5,
+    "Name": "Font for countdown",
+    "Description": "Font for countdown",
+    "TypeOfReminderId": 1,
+    "NameProperty": "font-family",
+    "NameElement": "countdownValue"
+  },
+  {
+    "Id": 6,
+    "Name": "Color for countdown",
+    "Description": "Color for countdown",
+    "TypeOfReminderId": 1,
+    "NameProperty": "color",
+    "NameElement": "countdownValue"
+  },
+  {
+    "Id": 7,
+    "Name": "Background color for countdown",
+    "Description": "Background color for countdown",
+    "TypeOfReminderId": 1,
+    "NameProperty": "background",
+    "NameElement": "countdownValue"
+  },
+  {
+    "Id": 8,
+    "Name": "Tile color",
+    "Description": "Tile color",
+    "TypeOfReminderId": 1,
+    "NameProperty": "background",
+    "NameElement": "tile"
+  },
+  {
+    "Id": 9,
+    "Name": "Tile color",
+    "Description": "Tile color",
+    "TypeOfReminderId": 2,
+    "NameProperty": "background",
+    "NameElement": "tile"
+  }
+]', 'Exception': ''}
+,{ 'Date': '2015-04-10 14:36:27.7010', 'Callsite': 'LoggingManager.MyLogger`1.Write', 'Level log' : 'Info', 'Message' : 'Get the full settings.
+ Return value is:
+ [
+  {
+    "Id": 1,
+    "Name": "Font for name",
+    "Description": "Font for name",
+    "TypeOfReminderId": 1,
+    "NameProperty": "font-family",
+    "NameElement": "reminderName"
+  },
+  {
+    "Id": 2,
+    "Name": "Font for name",
+    "Description": "Font for name",
+    "TypeOfReminderId": 2,
+    "NameProperty": "font-family",
+    "NameElement": "reminderName"
+  },
+  {
+    "Id": 3,
+    "Name": "Color of progress interval",
+    "Description": "Color of progress interval",
+    "TypeOfReminderId": 2,
+    "NameProperty": "background",
+    "NameElement": "progressInterval"
+  },
+  {
+    "Id": 4,
+    "Name": "Color of progress duration",
+    "Description": "Color of progress duration",
+    "TypeOfReminderId": 2,
+    "NameProperty": "background",
+    "NameElement": "progressDuration"
+  },
+  {
+    "Id": 5,
+    "Name": "Font for countdown",
+    "Description": "Font for countdown",
+    "TypeOfReminderId": 1,
+    "NameProperty": "font-family",
+    "NameElement": "countdownValue"
+  },
+  {
+    "Id": 6,
+    "Name": "Color for countdown",
+    "Description": "Color for countdown",
+    "TypeOfReminderId": 1,
+    "NameProperty": "color",
+    "NameElement": "countdownValue"
+  },
+  {
+    "Id": 7,
+    "Name": "Background color for countdown",
+    "Description": "Background color for countdown",
+    "TypeOfReminderId": 1,
+    "NameProperty": "background",
+    "NameElement": "countdownValue"
+  },
+  {
+    "Id": 8,
+    "Name": "Tile color",
+    "Description": "Tile color",
+    "TypeOfReminderId": 1,
+    "NameProperty": "background",
+    "NameElement": "tile"
+  },
+  {
+    "Id": 9,
+    "Name": "Tile color",
+    "Description": "Tile color",
+    "TypeOfReminderId": 2,
+    "NameProperty": "background",
+    "NameElement": "tile"
+  }
+]', 'Exception': ''}

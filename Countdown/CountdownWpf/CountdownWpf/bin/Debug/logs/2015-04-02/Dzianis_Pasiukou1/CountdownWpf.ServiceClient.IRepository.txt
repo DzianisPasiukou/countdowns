@@ -1,0 +1,5 @@
+Date: 2015-04-02 16:01:31.3682 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: MINSK\Dzianis_Pasiukou1 
+

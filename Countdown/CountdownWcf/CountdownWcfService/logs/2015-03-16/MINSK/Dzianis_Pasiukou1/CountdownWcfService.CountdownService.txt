@@ -1,0 +1,374 @@
+Date: 2015-03-16 12:53:34.9810 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is connected: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 12:53:44.5240 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 12:53:44.5240 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 12:54:08.3230 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 12:54:08.3230 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 12:54:16.6200 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 12:54:16.6210 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 12:54:55.8880 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is disconnected: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 12:58:29.7470 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is connected: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 12:58:39.2040 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 12:58:39.2040 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 12:58:58.2440 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 12:58:58.2440 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 12:59:19.9680 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 12:59:19.9680 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 13:31:24.8593 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is connected: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 13:59:22.5174 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is connected: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 13:59:33.6983 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 13:59:33.6983 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 13:59:36.3701 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 13:59:36.3701 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 13:59:53.1911 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is connected: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:00:01.3021 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:00:01.3021 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:00:02.6221 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:00:02.6221 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:00:19.1931 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is connected: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:00:26.6295 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:00:26.6295 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:01:18.3675 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is connected: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:01:28.8594 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:01:28.8594 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:01:46.3354 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is connected: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:01:55.7713 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:01:55.7713 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:01:58.8343 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:01:58.8343 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:02:15.2603 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:02:15.2603 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:02:20.4363 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:02:20.4363 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:02:23.4763 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:02:23.4763 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:05:04.0210 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is connected: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:05:04.0210 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:05:04.0310 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:05:22.5280 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:05:22.5280 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:05:41.8917 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is connected: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:05:50.9896 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:05:50.9896 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:05:57.9526 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:05:57.9526 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:06:01.2296 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:06:01.2296 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 14:09:23.3925 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 14:19:16.7073 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 14:30:14.8926 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 14:30:18.8476 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 14:30:33.2636 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 14:30:35.7656 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 14:30:40.0826 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 15:24:33.6009 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 15:26:24.3799 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 15:26:44.8639 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 15:26:54.2919 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 15:29:20.6299 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 15:29:35.1339 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 15:29:44.6819 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 15:29:51.5749 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 15:30:07.1459 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 15:36:11.9931 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 15:36:22.5651 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 15:36:45.4081 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 15:36:51.3841 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 15:38:26.8666 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 15:41:30.6771 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 15:43:31.5781 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 15:46:00.8901 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 15:46:22.2591 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 15:46:28.5511 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 15:54:41.0263 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 16:34:42.5567 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 16:41:07.6092 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 16:44:18.7322 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: null
+Date: 2015-03-16 16:50:07.8706 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is connected: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 16:50:19.2666 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 16:50:19.2666 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 16:50:24.1566 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 16:50:24.1566 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 16:50:33.6426 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 16:50:33.6426 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 16:50:43.7346 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 16:50:43.7346 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 16:50:50.9666 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 16:50:50.9666 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 16:50:58.5606 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 16:50:58.5606 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 16:51:37.9876 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is connected: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 16:51:48.5816 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 16:51:48.5816 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 16:52:06.9845 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is connected: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 16:52:24.2085 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 16:52:24.2085 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 16:57:26.4274 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is connected: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 17:01:55.1694 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is connected: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 17:02:06.1343 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 17:02:06.1343 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 17:04:04.5491 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is connected: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 17:07:51.0821 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is connected: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 17:11:02.6804 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is connected: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 17:11:23.3283 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 17:11:23.3283 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 17:11:32.3683 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 17:11:32.3683 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}
+Date: 2015-03-16 17:28:52.3333 ----- Callsite: LoggingManager.MyLogger`1.Write ----- Level log: Info ----- Message: User is connected: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+}

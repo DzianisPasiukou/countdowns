@@ -1,0 +1,24 @@
+Date: 2015-03-27 09:29:10.4824 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: {
+  "UserName": "MINSK\\Anton_Maiseyeu",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 09:32:42.2606 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: {
+  "UserName": "MINSK\\Anton_Maiseyeu",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 09:37:51.7050 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: {
+  "UserName": "MINSK\\Anton_Maiseyeu",
+  "Callback": {}
+} 
+

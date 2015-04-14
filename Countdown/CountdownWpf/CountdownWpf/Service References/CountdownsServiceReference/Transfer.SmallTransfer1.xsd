@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Transfer.SmallTransfer" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Transfer.SmallTransfer" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Transfer" />
+  <xs:complexType name="ArrayOfReminderPartDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ReminderPartDto" nillable="true" type="tns:ReminderPartDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfReminderPartDto" nillable="true" type="tns:ArrayOfReminderPartDto" />
+  <xs:complexType name="ReminderPartDto">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Transfer" minOccurs="0" name="CountdownsSettings" nillable="true" type="q1:CountdownSettingsDto" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Transfer" minOccurs="0" name="ProgressSettings" nillable="true" type="q2:ProgressSettingsDto" />
+      <xs:element minOccurs="0" name="State" type="tns:State" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReminderPartDto" nillable="true" type="tns:ReminderPartDto" />
+  <xs:simpleType name="State">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Updated" />
+      <xs:enumeration value="Created" />
+      <xs:enumeration value="Deleted" />
+      <xs:enumeration value="Activate" />
+      <xs:enumeration value="Postpone" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="State" nillable="true" type="tns:State" />
+</xs:schema>

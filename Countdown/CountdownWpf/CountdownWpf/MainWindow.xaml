@@ -1,0 +1,70 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="CountdownWpf.MainWindow"
+        Title="MainWindow" Height="326" Width="379" Closed="Window_Closed" StateChanged="Window_StateChanged" WindowStartupLocation="CenterScreen">
+	<Grid>
+		<Grid Name="loginGrid">
+			<Grid.Resources>
+				<Style x:Key="groupFadeOut" TargetType="{x:Type Label}">
+					<Style.Triggers>
+						<DataTrigger Binding="{Binding GroupFadeOut}" Value="true">
+							<DataTrigger.EnterActions>
+								<BeginStoryboard>
+									<Storyboard>
+										<DoubleAnimation Storyboard.TargetProperty="(Label.Opacity)" AccelerationRatio="1" From="1.0" To="0.0" Duration="0:0:6"/>
+									</Storyboard>
+								</BeginStoryboard>
+							</DataTrigger.EnterActions>
+							<DataTrigger.ExitActions>
+								<BeginStoryboard>
+									<Storyboard>
+										<DoubleAnimation Storyboard.TargetProperty="(Label.Opacity)" AccelerationRatio="1" From="1.0" To="0.0" Duration="0:0:6"/>
+									</Storyboard>
+								</BeginStoryboard>
+							</DataTrigger.ExitActions>
+						</DataTrigger>
+					</Style.Triggers>
+				</Style>
+			</Grid.Resources>
+			<TextBox HorizontalAlignment="Left" Height="22" Margin="100,108,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="153" Name="txtLogin"/>
+			<Label Content="Log in" HorizontalAlignment="Left" Margin="23,19,0,0" VerticalAlignment="Top" Height="38" Width="75" FontSize="20"/>
+			<Label Content="Login:" HorizontalAlignment="Left" Margin="35,108,0,0" VerticalAlignment="Top"/>
+			<Label Content="Password:" HorizontalAlignment="Left" Margin="35,135,0,0" VerticalAlignment="Top"/>
+			<Button Content="Log in" HorizontalAlignment="Left" Margin="77,232,0,0" VerticalAlignment="Top" Width="194" Height="52" Name="btnLogin" Click="Login">
+				<Button.Background>
+					<LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+						<GradientStop Color="#FFF3F3F3" Offset="0"/>
+						<GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+						<GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+						<GradientStop Color="#FF7F95C3" Offset="1"/>
+					</LinearGradientBrush>
+				</Button.Background>
+			</Button>
+			<Label Style="{StaticResource groupFadeOut}" Name="lblError" Content="Invalid login or password." HorizontalAlignment="Left" Margin="100,166,0,0" VerticalAlignment="Top" Width="237" Background="White" Foreground="#FFEC4A4A" Opacity="0"/>
+			<PasswordBox HorizontalAlignment="Left" PasswordChar="*" Name="pbPassword" Margin="100,135,0,0" VerticalAlignment="Top" Width="153" Height="25"/>
+			<TextBlock Name="TextBlockWithHyperlink" Margin="141,6,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="21">
+    <Hyperlink 
+        NavigateUri="http://localhost/Countdown/Account/Register"
+        RequestNavigate="Hyperlink_RequestNavigate">
+        Register
+    </Hyperlink>
+   if you don't have a local account.
+			</TextBlock>
+		</Grid>
+		<Grid Visibility="Hidden" Name="accountGrid">
+
+			<TextBlock Name="Site" Margin="10,261,-10,0">
+				Go to the
+    <Hyperlink 
+        NavigateUri="http://localhost/Countdown/"
+        RequestNavigate="Hyperlink_RequestNavigate">
+		site
+    </Hyperlink>
+			.
+			</TextBlock>
+			<Button Content="Sign out" Name="btnSignOut" Click="SignOut_Click" HorizontalAlignment="Left" Margin="253,77,0,0" VerticalAlignment="Top" Width="108" Height="47" />
+			<Label Content="" Name="lblInfo" HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top" Width="207" Height="222"/>
+		</Grid>
+	</Grid>
+</Window>

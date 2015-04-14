@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="CountdownDB" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="CountdownDBContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ReminderProgresses" EntityType="CountdownDB.ReminderProgress" />
+    <EntitySet Name="Intervals" EntityType="CountdownDB.Interval" />
+    <EntitySet Name="Exercises" EntityType="CountdownDB.Exercises" />
+    <EntitySet Name="Settings" EntityType="CountdownDB.Settings" />
+    <EntitySet Name="Durations" EntityType="CountdownDB.Durations" />
+    <EntitySet Name="DurationsRepeats" EntityType="CountdownDB.DurationsRepeat" />
+    <AssociationSet Name="Repeat" Association="CountdownDB.Repeat">
+      <End Role="DurationsRepeat" EntitySet="DurationsRepeats" />
+      <End Role="Durations" EntitySet="Intervals" />
+    </AssociationSet>
+    <EntitySet Name="ReminderSettings" EntityType="CountdownDB.ReminderSettings" />
+    <AssociationSet Name="SettingsReminderSettings" Association="CountdownDB.SettingsReminderSettings">
+      <End Role="Settings" EntitySet="Settings" />
+      <End Role="ReminderSettings" EntitySet="ReminderSettings" />
+    </AssociationSet>
+    <EntitySet Name="ReminderExercises" EntityType="CountdownDB.ReminderExercises" />
+    <AssociationSet Name="ReminderReminderExercises" Association="CountdownDB.ReminderReminderExercises">
+      <End Role="Reminder" EntitySet="ReminderProgresses" />
+      <End Role="ReminderExercises" EntitySet="ReminderExercises" />
+    </AssociationSet>
+    <AssociationSet Name="ExercisesReminderExercises" Association="CountdownDB.ExercisesReminderExercises">
+      <End Role="Exercises" EntitySet="Exercises" />
+      <End Role="ReminderExercises" EntitySet="ReminderExercises" />
+    </AssociationSet>
+    <EntitySet Name="Reminders" EntityType="CountdownDB.Reminder" />
+    <AssociationSet Name="ReminderProgressRemindercountdown" Association="CountdownDB.ReminderProgressRemindercountdown">
+      <End Role="ReminderProgress" EntitySet="ReminderProgresses" />
+      <End Role="Remindercountdown" EntitySet="Reminders" />
+    </AssociationSet>
+    <AssociationSet Name="ReminderSettingsReminder" Association="CountdownDB.ReminderSettingsReminder">
+      <End Role="ReminderSettings" EntitySet="ReminderSettings" />
+      <End Role="Reminder" EntitySet="Reminders" />
+    </AssociationSet>
+    <AssociationSet Name="ReminderInterval" Association="CountdownDB.ReminderInterval">
+      <End Role="Reminder" EntitySet="Reminders" />
+      <End Role="Interval" EntitySet="Intervals" />
+    </AssociationSet>
+    <AssociationSet Name="DurationsRepeatDurations" Association="CountdownDB.DurationsRepeatDurations">
+      <End Role="DurationsRepeat" EntitySet="DurationsRepeats" />
+      <End Role="Durations" EntitySet="Durations" />
+    </AssociationSet>
+    <AssociationSet Name="ReminderProgressInterval" Association="CountdownDB.ReminderProgressInterval">
+      <End EntitySet="ReminderProgresses" Role="ReminderProgress" />
+      <End EntitySet="Intervals" Role="Interval" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ReminderProgress">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Exercises" Relationship="CountdownDB.ReminderReminderExercises" FromRole="Reminder" ToRole="ReminderExercises" />
+    <NavigationProperty Name="Reminder" Relationship="CountdownDB.ReminderProgressRemindercountdown" FromRole="ReminderProgress" ToRole="Remindercountdown" />
+    <NavigationProperty Name="Interval" Relationship="CountdownDB.ReminderProgressInterval" FromRole="ReminderProgress" ToRole="Interval" />
+    <Property Name="IntervalId" Nullable="false" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Interval">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Start" Type="DateTime" Nullable="false" />
+    <Property Name="End" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Repeats" Relationship="CountdownDB.Repeat" FromRole="Durations" ToRole="DurationsRepeat" />
+    <NavigationProperty Name="Reminders" Relationship="CountdownDB.ReminderInterval" FromRole="Interval" ToRole="Reminder" />
+    <NavigationProperty Name="ReminderProgresses" Relationship="CountdownDB.ReminderProgressInterval" FromRole="Interval" ToRole="ReminderProgress" />
+  </EntityType>
+  <EntityType Name="Exercises">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="ReminderExercises" Relationship="CountdownDB.ExercisesReminderExercises" FromRole="Exercises" ToRole="ReminderExercises" />
+    <Property Name="Name" Type="String" Nullable="false" />
+    <Property Name="Description" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Settings">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="ReminderSettings" Relationship="CountdownDB.SettingsReminderSettings" FromRole="Settings" ToRole="ReminderSettings" />
+    <Property Name="Name" Type="String" Nullable="false" />
+    <Property Name="Description" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Durations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Years" Type="Int32" Nullable="false" />
+    <Property Name="Months" Type="Int32" Nullable="false" />
+    <Property Name="Days" Type="Int32" Nullable="false" />
+    <Property Name="Hours" Type="Int32" Nullable="false" />
+    <Property Name="Minutes" Type="Int32" Nullable="false" />
+    <Property Name="Seconds" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="DurationsRepeat" Relationship="CountdownDB.DurationsRepeatDurations" FromRole="Durations" ToRole="DurationsRepeat" />
+  </EntityType>
+  <EntityType Name="DurationsRepeat">
+    <Key>
+      <PropertyRef Name="IntervalId" />
+    </Key>
+    <NavigationProperty Name="Repeat" Relationship="CountdownDB.Repeat" FromRole="DurationsRepeat" ToRole="Durations" />
+    <Property Name="IntervalId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Duration" Relationship="CountdownDB.DurationsRepeatDurations" FromRole="DurationsRepeat" ToRole="Durations" />
+  </EntityType>
+  <Association Name="Repeat">
+    <End Type="CountdownDB.DurationsRepeat" Role="DurationsRepeat" Multiplicity="*" />
+    <End Type="CountdownDB.Interval" Role="Durations" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Durations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DurationsRepeat">
+        <PropertyRef Name="IntervalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="ReminderSettings">
+    <Key>
+      <PropertyRef Name="SettingsId" />
+      <PropertyRef Name="ReminderId" />
+    </Key>
+    <NavigationProperty Name="Setting" Relationship="CountdownDB.SettingsReminderSettings" FromRole="ReminderSettings" ToRole="Settings" />
+    <Property Name="SettingsId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Reminder" Relationship="CountdownDB.ReminderSettingsReminder" FromRole="ReminderSettings" ToRole="Reminder" />
+    <Property Name="ReminderId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="SettingsReminderSettings">
+    <End Type="CountdownDB.Settings" Role="Settings" Multiplicity="1" />
+    <End Type="CountdownDB.ReminderSettings" Role="ReminderSettings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Settings">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ReminderSettings">
+        <PropertyRef Name="SettingsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="ReminderExercises">
+    <Key>
+      <PropertyRef Name="ReminderId" />
+      <PropertyRef Name="ExercisesId" />
+    </Key>
+    <NavigationProperty Name="Reminder" Relationship="CountdownDB.ReminderReminderExercises" FromRole="ReminderExercises" ToRole="Reminder" />
+    <Property Name="ReminderId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Exercise" Relationship="CountdownDB.ExercisesReminderExercises" FromRole="ReminderExercises" ToRole="Exercises" />
+    <Property Name="ExercisesId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="ReminderReminderExercises">
+    <End Type="CountdownDB.ReminderProgress" Role="Reminder" Multiplicity="1" />
+    <End Type="CountdownDB.ReminderExercises" Role="ReminderExercises" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Reminder">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ReminderExercises">
+        <PropertyRef Name="ReminderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ExercisesReminderExercises">
+    <End Type="CountdownDB.Exercises" Role="Exercises" Multiplicity="1" />
+    <End Type="CountdownDB.ReminderExercises" Role="ReminderExercises" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Exercises">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ReminderExercises">
+        <PropertyRef Name="ExercisesId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Reminder">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" />
+    <Property Name="Description" Type="String" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" />
+    <NavigationProperty Name="ReminderProgress" Relationship="CountdownDB.ReminderProgressRemindercountdown" FromRole="Remindercountdown" ToRole="ReminderProgress" />
+    <NavigationProperty Name="ReminderSettings" Relationship="CountdownDB.ReminderSettingsReminder" FromRole="Reminder" ToRole="ReminderSettings" />
+    <NavigationProperty Name="Interval" Relationship="CountdownDB.ReminderInterval" FromRole="Reminder" ToRole="Interval" />
+    <Property Name="IntervalId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="ReminderProgressRemindercountdown">
+    <End Type="CountdownDB.ReminderProgress" Role="ReminderProgress" Multiplicity="1" />
+    <End Type="CountdownDB.Reminder" Role="Remindercountdown" Multiplicity="1" />
+  </Association>
+  <Association Name="ReminderSettingsReminder">
+    <End Type="CountdownDB.ReminderSettings" Role="ReminderSettings" Multiplicity="*" />
+    <End Type="CountdownDB.Reminder" Role="Reminder" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Reminder">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ReminderSettings">
+        <PropertyRef Name="ReminderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ReminderInterval">
+    <End Type="CountdownDB.Reminder" Role="Reminder" Multiplicity="*" />
+    <End Type="CountdownDB.Interval" Role="Interval" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Interval">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Reminder">
+        <PropertyRef Name="IntervalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="DurationsRepeatDurations">
+    <End Type="CountdownDB.DurationsRepeat" Role="DurationsRepeat" Multiplicity="1" />
+    <End Type="CountdownDB.Durations" Role="Durations" Multiplicity="1" />
+  </Association>
+  <Association Name="ReminderProgressInterval">
+    <End Type="CountdownDB.ReminderProgress" Multiplicity="*" Role="ReminderProgress" />
+    <End Type="CountdownDB.Interval" Multiplicity="1" Role="Interval" />
+    <ReferentialConstraint>
+      <Principal Role="Interval">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ReminderProgress">
+        <PropertyRef Name="IntervalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

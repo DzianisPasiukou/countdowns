@@ -1,0 +1,144 @@
+Date: 2015-04-09 16:22:09.3636 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:22:09.3636 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:23:25.4180 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:23:25.4180 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:23:40.4860 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:23:40.4860 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:23:49.7440 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:23:49.7440 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:23:56.9250 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:23:56.9250 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:25:04.1538 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:25:04.1538 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:25:04.1538 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:25:04.1538 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:25:07.8748 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:25:07.8748 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:25:36.1128 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+
+Date: 2015-04-09 16:25:36.1128 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "admin",
+  "Callback": {}
+} 
+

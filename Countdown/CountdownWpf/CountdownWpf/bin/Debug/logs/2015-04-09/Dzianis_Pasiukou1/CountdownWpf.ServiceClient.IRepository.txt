@@ -1,0 +1,416 @@
+Date: 2015-04-09 15:32:33.8157 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed with connected user  
+System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: Sequence contains no elements (Fault Detail is equal to An ExceptionDetail, likely created by IncludeExceptionDetailInFaults=true, whose value is:
+System.InvalidOperationException: Sequence contains no elements
+   at System.ServiceModel.Dispatcher.TaskMethodInvoker.InvokeEnd(Object instance, Object[]& outputs, IAsyncResult result)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeEnd(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage7(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)).
+Date: 2015-04-09 15:32:46.8037 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed with connected user  
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.OnConnectUser(String userName, String password)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.OnConnectUser(String userName, String password) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 98
+   at CountdownWpf.ServiceClient.ServiceRepository.Connect(String userName, String password) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 200
+Date: 2015-04-09 15:32:49.9547 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed with disconnect user  
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.OnDisconnectUser(String userName)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.OnDisconnectUser(String userName) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 106
+   at CountdownWpf.ServiceClient.ServiceRepository.ReleaseManagedResources() in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 250
+Date: 2015-04-09 15:37:17.1158 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed with connected user  
+System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: Sequence contains no elements (Fault Detail is equal to An ExceptionDetail, likely created by IncludeExceptionDetailInFaults=true, whose value is:
+System.InvalidOperationException: Sequence contains no elements
+   at System.ServiceModel.Dispatcher.TaskMethodInvoker.InvokeEnd(Object instance, Object[]& outputs, IAsyncResult result)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeEnd(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage7(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)).
+Date: 2015-04-09 15:37:20.1568 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed with disconnect user  
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.OnDisconnectUser(String userName)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.OnDisconnectUser(String userName) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 106
+   at CountdownWpf.ServiceClient.ServiceRepository.ReleaseManagedResources() in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 250
+Date: 2015-04-09 15:37:41.4558 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed with connected user  
+System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: Sequence contains no elements (Fault Detail is equal to An ExceptionDetail, likely created by IncludeExceptionDetailInFaults=true, whose value is:
+System.InvalidOperationException: Sequence contains no elements
+   at System.ServiceModel.Dispatcher.TaskMethodInvoker.InvokeEnd(Object instance, Object[]& outputs, IAsyncResult result)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeEnd(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage7(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)).
+Date: 2015-04-09 15:37:43.2328 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed with disconnect user  
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.OnDisconnectUser(String userName)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.OnDisconnectUser(String userName) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 106
+   at CountdownWpf.ServiceClient.ServiceRepository.ReleaseManagedResources() in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 250
+Date: 2015-04-09 16:02:06.7946 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed with connected user  
+System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: Sequence contains no elements (Fault Detail is equal to An ExceptionDetail, likely created by IncludeExceptionDetailInFaults=true, whose value is:
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__0[TResult](IEnumerable`1 sequence)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.First[TSource](IQueryable`1 source, Expression`1 predicate)
+   at CountdownDataBaseLayer.Repo.UsersRepo.GetByName(String name) in d:\Projects\CountdownMvc\CountdownDataBaseLayer\Repo\UsersRepo.cs:line 36
+   at CountdownMvc.Models.UserIdentity.CustomUserStore.FindByNameAsync(String userN...).
+Date: 2015-04-09 16:04:18.9321 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed with connected user  
+System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: Sequence contains no elements (Fault Detail is equal to An ExceptionDetail, likely created by IncludeExceptionDetailInFaults=true, whose value is:
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__0[TResult](IEnumerable`1 sequence)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.First[TSource](IQueryable`1 source, Expression`1 predicate)
+   at CountdownDataBaseLayer.Repo.UsersRepo.GetByName(String name) in d:\Projects\CountdownMvc\CountdownDataBaseLayer\Repo\UsersRepo.cs:line 36
+   at CountdownMvc.Models.UserIdentity.CustomUserStore.FindByNameAsync(String userN...).
+Date: 2015-04-09 16:04:33.0512 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed with connected user  
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.OnConnectUser(String userName, String password)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.OnConnectUser(String userName, String password) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 98
+   at CountdownWpf.ServiceClient.ServiceRepository.Connect(String userName, String password) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 200
+Date: 2015-04-09 16:05:25.3921 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: admin 
+
+Date: 2015-04-09 16:06:10.0861 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed with connected user  
+System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: Sequence contains no elements (Fault Detail is equal to An ExceptionDetail, likely created by IncludeExceptionDetailInFaults=true, whose value is:
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at System.Linq.Queryable.First[TSource](IQueryable`1 source, Expression`1 predicate)
+   at CountdownDataBaseLayer.Repo.UsersRepo.GetByName(String name) in d:\Projects\CountdownMvc\CountdownDataBaseLayer\Repo\UsersRepo.cs:line 36
+   at CountdownMvc.Models.UserIdentity.CustomUserStore.FindByNameAsync(String userName) in d:\Projects\CountdownMvc\CountdownMvc\Models\UserIdentity\CustomUserStore.cs:line 121
+   at CountdownMvc.Models.UserIdentity.CustomUserManager.Find(String userName, String password) in d:\Projects\CountdownMvc\CountdownMvc\Models\UserIdentity\CustomUserManager.cs:line 73
+   at CountdownWcfService.CountdownService.OnConnectUser(String userName, String password) in d:\Projects\CountdownMvc\Countdown\CountdownWcf\CountdownWcfService\CountdownService.svc.cs:line 186
+   a...).
+Date: 2015-04-09 16:06:16.7761 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed with connected user  
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.OnConnectUser(String userName, String password)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.OnConnectUser(String userName, String password) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 98
+   at CountdownWpf.ServiceClient.ServiceRepository.Connect(String userName, String password) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 200
+Date: 2015-04-09 16:06:21.1081 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed with connected user  
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.OnConnectUser(String userName, String password)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.OnConnectUser(String userName, String password) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 98
+   at CountdownWpf.ServiceClient.ServiceRepository.Connect(String userName, String password) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 200
+Date: 2015-04-09 16:06:38.4281 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: Failed with disconnect user  
+System.ServiceModel.CommunicationObjectFaultedException: The communication object, System.ServiceModel.Channels.ServiceChannel, cannot be used for communication because it is in the Faulted state.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWpf.CountdownsServiceReference.ICountdownService.OnDisconnectUser(String userName)
+   at CountdownWpf.CountdownsServiceReference.CountdownServiceClient.OnDisconnectUser(String userName) in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\Service References\CountdownsServiceReference\Reference.cs:line 106
+   at CountdownWpf.ServiceClient.ServiceRepository.ReleaseManagedResources() in d:\Projects\CountdownMvc\Countdown\CountdownWpf\CountdownWpf\ServiceClient\ServiceRepository.cs:line 252
+Date: 2015-04-09 16:09:14.9039 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: admin 
+
+Date: 2015-04-09 16:09:18.1258 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: admin 
+
+Date: 2015-04-09 16:09:42.2055 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: admin 
+
+Date: 2015-04-09 16:09:45.6844 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: admin 
+
+Date: 2015-04-09 16:10:55.0394 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: admin 
+
+Date: 2015-04-09 16:10:58.0314 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: admin 
+
+Date: 2015-04-09 16:14:44.2042 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: admin 
+
+Date: 2015-04-09 16:18:18.3410 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-09 16:18:26.0947 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-09 16:19:23.3779 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-09 16:19:31.9355 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-09 16:23:37.2870 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: admin 
+
+Date: 2015-04-09 16:24:15.4050 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-09 16:24:42.8049 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: admin 
+
+Date: 2015-04-09 16:24:42.8049 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: admin 
+
+Date: 2015-04-09 16:26:05.6145 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: admin 
+
+Date: 2015-04-09 16:32:31.1419 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-09 16:36:03.7549 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: admin 
+
+Date: 2015-04-09 16:36:06.3849 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: admin 
+
+Date: 2015-04-09 16:37:10.8359 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-09 16:38:34.1949 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-09 16:41:36.0909 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-09 16:42:54.2479 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-09 16:43:41.5419 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-09 16:44:31.7369 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-09 16:45:50.6009 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-09 16:47:27.5419 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-09 16:53:51.7573 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-09 16:54:05.7330 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-09 16:54:21.4577 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-09 16:59:11.2963 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-09 17:11:11.6713 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-09 17:11:49.4923 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-09 17:27:39.2723 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected:  
+
+Date: 2015-04-09 18:04:55.3052 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is connected: admin 
+
+Date: 2015-04-09 18:05:00.9602 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is disconnected: admin 
+

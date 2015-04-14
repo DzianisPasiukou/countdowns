@@ -1,0 +1,767 @@
+Date: 2015-03-27 09:55:00.6724 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 10:00:15.6382 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 10:00:20.4952 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 10:00:36.2162 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 10:13:26.2051 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 10:13:30.1000 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 10:13:38.7109 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 10:15:23.2636 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 10:15:29.2125 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 10:16:06.6149 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 10:17:27.2352 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 10:17:30.1592 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 10:17:37.0872 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 10:17:55.6224 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 10:19:27.5028 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 10:31:44.5673 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 10:32:20.4608 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 10:32:47.7068 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 10:33:18.6578 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 10:48:12.7501 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 10:48:19.6350 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 10:48:50.0833 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 10:49:25.7470 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 10:56:31.7396 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 10:56:33.5806 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 10:59:29.4340 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 11:00:16.6108 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 11:00:47.7917 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 11:00:55.3567 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 11:01:00.6067 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 11:12:21.1099 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 11:12:37.3419 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 11:12:44.2529 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 11:14:16.2889 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 11:14:41.8328 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 11:15:32.9246 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 11:18:49.2084 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 11:19:41.2832 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 11:20:03.2472 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 11:22:11.7532 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 11:22:19.6358 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 11:23:37.8820 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 11:31:21.6619 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 11:31:21.6619 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 11:31:27.5239 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 11:31:27.5239 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 11:31:37.5878 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 11:31:37.5878 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 11:31:45.9388 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 11:31:45.9388 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 11:32:15.9157 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 11:32:15.9157 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 11:32:23.8797 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 11:32:23.8797 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 11:32:28.9297 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 11:32:28.9297 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 11:32:37.5986 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: User MINSK\Dzianis_Pasiukou1 is droped. 
+System.TimeoutException: The message could not be transferred within the allotted timeout of 00:01:00. There was no space available in the reliable channel's transfer window. The time allotted to this operation may have been a portion of a longer timeout.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   at System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   at System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   at System.ServiceModel.Channels.ReliableDuplexSessionChannel.OnSend(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.DuplexChannel.Send(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWcfService.ICountdownCallback.NotifyAboutRefreshReminder(ReminderPartDto reminder)
+   at CountdownWcfService.CountdownService.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWcf\CountdownWcfService\CountdownService.svc.cs:line 131
+Date: 2015-03-27 11:32:44.4136 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 11:32:45.9406 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: User MINSK\Dzianis_Pasiukou1 is droped. 
+System.TimeoutException: The message could not be transferred within the allotted timeout of 00:01:00. There was no space available in the reliable channel's transfer window. The time allotted to this operation may have been a portion of a longer timeout.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   at System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   at System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   at System.ServiceModel.Channels.ReliableDuplexSessionChannel.OnSend(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.DuplexChannel.Send(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWcfService.ICountdownCallback.NotifyAboutRefreshReminder(ReminderPartDto reminder)
+   at CountdownWcfService.CountdownService.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWcf\CountdownWcfService\CountdownService.svc.cs:line 131
+Date: 2015-03-27 11:33:15.8965 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: User MINSK\Dzianis_Pasiukou1 is droped. 
+System.TimeoutException: The message could not be transferred within the allotted timeout of 00:01:00. There was no space available in the reliable channel's transfer window. The time allotted to this operation may have been a portion of a longer timeout.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   at System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   at System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   at System.ServiceModel.Channels.ReliableDuplexSessionChannel.OnSend(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.DuplexChannel.Send(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWcfService.ICountdownCallback.NotifyAboutRefreshReminder(ReminderPartDto reminder)
+   at CountdownWcfService.CountdownService.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWcf\CountdownWcfService\CountdownService.svc.cs:line 131
+Date: 2015-03-27 11:33:23.8605 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: User MINSK\Dzianis_Pasiukou1 is droped. 
+System.TimeoutException: The message could not be transferred within the allotted timeout of 00:01:00. There was no space available in the reliable channel's transfer window. The time allotted to this operation may have been a portion of a longer timeout.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   at System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   at System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   at System.ServiceModel.Channels.ReliableDuplexSessionChannel.OnSend(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.DuplexChannel.Send(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWcfService.ICountdownCallback.NotifyAboutRefreshReminder(ReminderPartDto reminder)
+   at CountdownWcfService.CountdownService.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWcf\CountdownWcfService\CountdownService.svc.cs:line 131
+Date: 2015-03-27 11:33:28.9105 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: User MINSK\Dzianis_Pasiukou1 is droped. 
+System.TimeoutException: The message could not be transferred within the allotted timeout of 00:01:00. There was no space available in the reliable channel's transfer window. The time allotted to this operation may have been a portion of a longer timeout.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   at System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   at System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   at System.ServiceModel.Channels.ReliableDuplexSessionChannel.OnSend(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.DuplexChannel.Send(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWcfService.ICountdownCallback.NotifyAboutRefreshReminder(ReminderPartDto reminder)
+   at CountdownWcfService.CountdownService.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWcf\CountdownWcfService\CountdownService.svc.cs:line 131
+Date: 2015-03-27 11:34:06.9228 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 11:34:06.9228 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 15:07:06.0285 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 15:14:46.9832 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 15:14:50.2832 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 16:09:52.4140 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 16:09:52.4140 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 16:09:59.4180 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 16:09:59.4180 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 16:10:28.6460 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 16:10:28.6460 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 16:10:34.4600 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 16:10:34.4600 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 16:10:36.9110 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 16:10:36.9110 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 16:10:39.1950 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 16:10:39.1950 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 16:11:36.9190 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: User MINSK\Dzianis_Pasiukou1 is droped. 
+System.TimeoutException: The message could not be transferred within the allotted timeout of 00:01:00. There was no space available in the reliable channel's transfer window. The time allotted to this operation may have been a portion of a longer timeout.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   at System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   at System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   at System.ServiceModel.Channels.ReliableDuplexSessionChannel.OnSend(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.DuplexChannel.Send(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWcfService.ICountdownCallback.NotifyAboutRefreshReminder(ReminderPartDto reminder)
+   at CountdownWcfService.CountdownService.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWcf\CountdownWcfService\CountdownService.svc.cs:line 131
+Date: 2015-03-27 16:11:39.1980 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: User MINSK\Dzianis_Pasiukou1 is droped. 
+System.TimeoutException: The message could not be transferred within the allotted timeout of 00:01:00. There was no space available in the reliable channel's transfer window. The time allotted to this operation may have been a portion of a longer timeout.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.TransmissionStrategy.WaitQueueAdder.Wait(TimeSpan timeout)
+   at System.ServiceModel.Channels.TransmissionStrategy.InternalAdd(Message message, Boolean isLast, TimeSpan timeout, Object state, MessageAttemptInfo& attemptInfo)
+   at System.ServiceModel.Channels.ReliableOutputConnection.InternalAddMessage(Message message, TimeSpan timeout, Object state, Boolean isLast)
+   at System.ServiceModel.Channels.ReliableDuplexSessionChannel.OnSend(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.DuplexChannel.Send(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWcfService.ICountdownCallback.NotifyAboutRefreshReminder(ReminderPartDto reminder)
+   at CountdownWcfService.CountdownService.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWcf\CountdownWcfService\CountdownService.svc.cs:line 131
+Date: 2015-03-27 16:11:52.6315 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 16:12:03.1785 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 16:12:23.1330 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 16:12:23.1330 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 16:12:27.1400 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 16:12:27.1400 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 16:12:31.1260 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 16:12:31.1260 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 16:40:11.2044 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 16:40:11.2044 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: Updated data by user: {
+  "UserName": "MINSK\\Dzianis_Pasiukou1",
+  "Callback": {}
+} 
+
+Date: 2015-03-27 16:40:11.2044 
+Callsite: LoggingManager.MyLogger`1.WriteException 
+Level log: Error 
+Message: User MINSK\Dzianis_Pasiukou1 is droped. 
+System.ServiceModel.CommunicationObjectAbortedException: The operation 'NotifyAboutRefreshReminder' could not be completed because the sessionful channel timed out waiting to receive a message.  To increase the timeout, either set the receiveTimeout property on the binding in your configuration file, or set the ReceiveTimeout property on the Binding directly.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.ThrowIfIdleAborted(ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at CountdownWcfService.ICountdownCallback.NotifyAboutRefreshReminder(ReminderPartDto reminder)
+   at CountdownWcfService.CountdownService.UpdateData(String userName, Int32 id, State state) in d:\Projects\CountdownMvc\Countdown\CountdownWcf\CountdownWcfService\CountdownService.svc.cs:line 131
+Date: 2015-03-27 16:40:16.4433 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 16:40:20.0443 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 16:40:23.3473 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 17:02:33.0080 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 17:20:57.3075 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 17:21:05.3130 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 17:21:52.5573 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 17:24:25.6331 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 17:24:33.4400 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 17:24:40.7870 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 17:24:51.2909 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 17:25:03.4648 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 17:25:16.4748 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 17:25:31.2587 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+
+Date: 2015-03-27 17:25:56.0850 
+Callsite: LoggingManager.MyLogger`1.Write 
+Level log: Info 
+Message: User is updated data: null 
+

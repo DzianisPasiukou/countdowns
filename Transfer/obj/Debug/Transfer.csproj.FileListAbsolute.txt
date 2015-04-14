@@ -1,0 +1,5 @@
+D:\Projects\CountdownMvc\Transfer\bin\Debug\Transfer.dll
+D:\Projects\CountdownMvc\Transfer\bin\Debug\Transfer.pdb
+D:\Projects\CountdownMvc\Transfer\obj\Debug\Transfer.dll
+D:\Projects\CountdownMvc\Transfer\obj\Debug\Transfer.pdb
+D:\Projects\CountdownMvc\Transfer\obj\Debug\Transfer.csprojResolveAssemblyReference.cache

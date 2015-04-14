@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CountdownModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Duration">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Years" Type="Int32" Nullable="false" />
+    <Property Name="Months" Type="Int32" Nullable="false" />
+    <Property Name="Days" Type="Int32" Nullable="false" />
+    <Property Name="Hours" Type="Int32" Nullable="false" />
+    <Property Name="Minutes" Type="Int32" Nullable="false" />
+    <Property Name="Seconds" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Intervals" Relationship="Self.FK_IntervalDurations" FromRole="Durations" ToRole="Intervals" />
+    <NavigationProperty Name="Reminders" Relationship="Self.FK_ReminderDurations" FromRole="Durations" ToRole="Reminders" />
+  </EntityType>
+  <EntityType Name="Exercis">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ReminderId" Type="Int32" />
+    <NavigationProperty Name="Files" Relationship="Self.FK_FilesExercises" FromRole="Exercises" ToRole="Files" />
+    <NavigationProperty Name="Reminder" Relationship="Self.FK_ReminderExercises" FromRole="Exercises" ToRole="Reminders" />
+  </EntityType>
+  <EntityType Name="File">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ExercisesId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Resource" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Exercis" Relationship="Self.FK_FilesExercises" FromRole="Files" ToRole="Exercises" />
+  </EntityType>
+  <EntityType Name="Interval">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Start" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="End" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DurationsId" Type="Int32" />
+    <NavigationProperty Name="Duration" Relationship="Self.FK_IntervalDurations" FromRole="Intervals" ToRole="Durations" />
+    <NavigationProperty Name="Reminders" Relationship="Self.FK_IntervalReminder" FromRole="Intervals" ToRole="Reminders" />
+  </EntityType>
+  <EntityType Name="Reminder">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IntervalId" Type="Int32" Nullable="false" />
+    <Property Name="TypeOfReminderId" Type="Int32" Nullable="false" />
+    <Property Name="Duration_Id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Duration" Relationship="Self.FK_ReminderDurations" FromRole="Reminders" ToRole="Durations" />
+    <NavigationProperty Name="Exercises" Relationship="Self.FK_ReminderExercises" FromRole="Reminders" ToRole="Exercises" />
+    <NavigationProperty Name="Interval" Relationship="Self.FK_IntervalReminder" FromRole="Reminders" ToRole="Intervals" />
+    <NavigationProperty Name="TypeOfReminder" Relationship="Self.FK_TypeOfReminderReminder" FromRole="Reminders" ToRole="TypeOfReminders" />
+    <NavigationProperty Name="Settings" Relationship="Self.ReminderSettings" FromRole="Reminders" ToRole="Settings" />
+  </EntityType>
+  <EntityType Name="Setting">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Reminders" Relationship="Self.ReminderSettings" FromRole="Settings" ToRole="Reminders" />
+  </EntityType>
+  <EntityType Name="TypeOfReminder">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Reminders" Relationship="Self.FK_TypeOfReminderReminder" FromRole="TypeOfReminders" ToRole="Reminders" />
+  </EntityType>
+  <Association Name="FK_IntervalDurations">
+    <End Role="Durations" Type="Self.Duration" Multiplicity="0..1" />
+    <End Role="Intervals" Type="Self.Interval" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Durations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Intervals">
+        <PropertyRef Name="DurationsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ReminderDurations">
+    <End Role="Durations" Type="Self.Duration" Multiplicity="1" />
+    <End Role="Reminders" Type="Self.Reminder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Durations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Reminders">
+        <PropertyRef Name="Duration_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FilesExercises">
+    <End Role="Exercises" Type="Self.Exercis" Multiplicity="1" />
+    <End Role="Files" Type="Self.File" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Exercises">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Files">
+        <PropertyRef Name="ExercisesId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ReminderExercises">
+    <End Role="Reminders" Type="Self.Reminder" Multiplicity="0..1" />
+    <End Role="Exercises" Type="Self.Exercis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Reminders">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Exercises">
+        <PropertyRef Name="ReminderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IntervalReminder">
+    <End Role="Intervals" Type="Self.Interval" Multiplicity="1" />
+    <End Role="Reminders" Type="Self.Reminder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Intervals">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Reminders">
+        <PropertyRef Name="IntervalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TypeOfReminderReminder">
+    <End Role="TypeOfReminders" Type="Self.TypeOfReminder" Multiplicity="1" />
+    <End Role="Reminders" Type="Self.Reminder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TypeOfReminders">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Reminders">
+        <PropertyRef Name="TypeOfReminderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ReminderSettings">
+    <End Role="Reminders" Type="Self.Reminder" Multiplicity="*" />
+    <End Role="Settings" Type="Self.Setting" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="CountdownEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Durations" EntityType="Self.Duration" />
+    <EntitySet Name="Exercises" EntityType="Self.Exercis" />
+    <EntitySet Name="Files" EntityType="Self.File" />
+    <EntitySet Name="Intervals" EntityType="Self.Interval" />
+    <EntitySet Name="Reminders" EntityType="Self.Reminder" />
+    <EntitySet Name="Settings" EntityType="Self.Setting" />
+    <EntitySet Name="TypeOfReminders" EntityType="Self.TypeOfReminder" />
+    <AssociationSet Name="FK_IntervalDurations" Association="Self.FK_IntervalDurations">
+      <End Role="Durations" EntitySet="Durations" />
+      <End Role="Intervals" EntitySet="Intervals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ReminderDurations" Association="Self.FK_ReminderDurations">
+      <End Role="Durations" EntitySet="Durations" />
+      <End Role="Reminders" EntitySet="Reminders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FilesExercises" Association="Self.FK_FilesExercises">
+      <End Role="Exercises" EntitySet="Exercises" />
+      <End Role="Files" EntitySet="Files" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ReminderExercises" Association="Self.FK_ReminderExercises">
+      <End Role="Reminders" EntitySet="Reminders" />
+      <End Role="Exercises" EntitySet="Exercises" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IntervalReminder" Association="Self.FK_IntervalReminder">
+      <End Role="Intervals" EntitySet="Intervals" />
+      <End Role="Reminders" EntitySet="Reminders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TypeOfReminderReminder" Association="Self.FK_TypeOfReminderReminder">
+      <End Role="TypeOfReminders" EntitySet="TypeOfReminders" />
+      <End Role="Reminders" EntitySet="Reminders" />
+    </AssociationSet>
+    <AssociationSet Name="ReminderSettings" Association="Self.ReminderSettings">
+      <End Role="Reminders" EntitySet="Reminders" />
+      <End Role="Settings" EntitySet="Settings" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
